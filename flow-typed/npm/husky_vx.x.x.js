@@ -1,4 +1,4 @@
-// flow-typed signature: ef675f62b588950d37bebf9e62ce460f
+// flow-typed signature: 3b1afe3092e0f86ee0968667fb3aaf79
 // flow-typed version: <<STUB>>/husky_v^1.1.4/flow_v0.77.0
 
 /**
@@ -38,7 +38,7 @@ declare module 'husky/lib/installer/getScript' {
   declare module.exports: any;
 }
 
-declare module 'husky/lib/installer/index' {
+declare module 'husky/lib/installer' {
   declare module.exports: any;
 }
 
@@ -54,7 +54,7 @@ declare module 'husky/lib/runner/bin' {
   declare module.exports: any;
 }
 
-declare module 'husky/lib/runner/index' {
+declare module 'husky/lib/runner' {
   declare module.exports: any;
 }
 
@@ -62,7 +62,7 @@ declare module 'husky/lib/upgrader/bin' {
   declare module.exports: any;
 }
 
-declare module 'husky/lib/upgrader/index' {
+declare module 'husky/lib/upgrader' {
   declare module.exports: any;
 }
 
@@ -83,8 +83,11 @@ declare module 'husky/lib/installer/bin.js' {
 declare module 'husky/lib/installer/getScript.js' {
   declare module.exports: $Exports<'husky/lib/installer/getScript'>;
 }
+declare module 'husky/lib/installer/index' {
+  declare module.exports: $Exports<'husky/lib/installer'>;
+}
 declare module 'husky/lib/installer/index.js' {
-  declare module.exports: $Exports<'husky/lib/installer/index'>;
+  declare module.exports: $Exports<'husky/lib/installer'>;
 }
 declare module 'husky/lib/installer/is.js' {
   declare module.exports: $Exports<'husky/lib/installer/is'>;
@@ -95,14 +98,20 @@ declare module 'husky/lib/installer/resolveGitDir.js' {
 declare module 'husky/lib/runner/bin.js' {
   declare module.exports: $Exports<'husky/lib/runner/bin'>;
 }
+declare module 'husky/lib/runner/index' {
+  declare module.exports: $Exports<'husky/lib/runner'>;
+}
 declare module 'husky/lib/runner/index.js' {
-  declare module.exports: $Exports<'husky/lib/runner/index'>;
+  declare module.exports: $Exports<'husky/lib/runner'>;
 }
 declare module 'husky/lib/upgrader/bin.js' {
   declare module.exports: $Exports<'husky/lib/upgrader/bin'>;
 }
+declare module 'husky/lib/upgrader/index' {
+  declare module.exports: $Exports<'husky/lib/upgrader'>;
+}
 declare module 'husky/lib/upgrader/index.js' {
-  declare module.exports: $Exports<'husky/lib/upgrader/index'>;
+  declare module.exports: $Exports<'husky/lib/upgrader'>;
 }
 declare module 'husky/run.js' {
   declare module.exports: $Exports<'husky/run'>;

@@ -1,4 +1,4 @@
-// flow-typed signature: 592eb6f38c8299e6fdd3e997b874eda1
+// flow-typed signature: d7461cf98799a589ff88c807df736f2e
 // flow-typed version: <<STUB>>/url-loader_v^1.1.2/flow_v0.77.0
 
 /**
@@ -26,7 +26,7 @@ declare module 'url-loader/dist/cjs' {
   declare module.exports: any;
 }
 
-declare module 'url-loader/dist/index' {
+declare module 'url-loader/dist' {
   declare module.exports: any;
 }
 
@@ -38,8 +38,11 @@ declare module 'url-loader/dist/utils/normalizeFallback' {
 declare module 'url-loader/dist/cjs.js' {
   declare module.exports: $Exports<'url-loader/dist/cjs'>;
 }
+declare module 'url-loader/dist/index' {
+  declare module.exports: $Exports<'url-loader/dist'>;
+}
 declare module 'url-loader/dist/index.js' {
-  declare module.exports: $Exports<'url-loader/dist/index'>;
+  declare module.exports: $Exports<'url-loader/dist'>;
 }
 declare module 'url-loader/dist/utils/normalizeFallback.js' {
   declare module.exports: $Exports<'url-loader/dist/utils/normalizeFallback'>;

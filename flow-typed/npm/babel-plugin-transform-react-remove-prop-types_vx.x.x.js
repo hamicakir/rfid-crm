@@ -1,4 +1,4 @@
-// flow-typed signature: 71974876ab92ba6973221fcaa1933488
+// flow-typed signature: 00b3ec83a688ff41bffb456aca089261
 // flow-typed version: <<STUB>>/babel-plugin-transform-react-remove-prop-types_v^0.4.20/flow_v0.77.0
 
 /**
@@ -22,7 +22,7 @@ declare module 'babel-plugin-transform-react-remove-prop-types' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'babel-plugin-transform-react-remove-prop-types/lib/index' {
+declare module 'babel-plugin-transform-react-remove-prop-types/lib' {
   declare module.exports: any;
 }
 
@@ -38,7 +38,7 @@ declare module 'babel-plugin-transform-react-remove-prop-types/lib/remove' {
   declare module.exports: any;
 }
 
-declare module 'babel-plugin-transform-react-remove-prop-types/src/index' {
+declare module 'babel-plugin-transform-react-remove-prop-types/src' {
   declare module.exports: any;
 }
 
@@ -55,8 +55,11 @@ declare module 'babel-plugin-transform-react-remove-prop-types/src/remove' {
 }
 
 // Filename aliases
+declare module 'babel-plugin-transform-react-remove-prop-types/lib/index' {
+  declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/lib'>;
+}
 declare module 'babel-plugin-transform-react-remove-prop-types/lib/index.js' {
-  declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/lib/index'>;
+  declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/lib'>;
 }
 declare module 'babel-plugin-transform-react-remove-prop-types/lib/isAnnotatedForRemoval.js' {
   declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/lib/isAnnotatedForRemoval'>;
@@ -67,8 +70,11 @@ declare module 'babel-plugin-transform-react-remove-prop-types/lib/isStatelessCo
 declare module 'babel-plugin-transform-react-remove-prop-types/lib/remove.js' {
   declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/lib/remove'>;
 }
+declare module 'babel-plugin-transform-react-remove-prop-types/src/index' {
+  declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/src'>;
+}
 declare module 'babel-plugin-transform-react-remove-prop-types/src/index.js' {
-  declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/src/index'>;
+  declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/src'>;
 }
 declare module 'babel-plugin-transform-react-remove-prop-types/src/isAnnotatedForRemoval.js' {
   declare module.exports: $Exports<'babel-plugin-transform-react-remove-prop-types/src/isAnnotatedForRemoval'>;

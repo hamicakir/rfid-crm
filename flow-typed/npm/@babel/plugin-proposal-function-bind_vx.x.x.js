@@ -1,4 +1,4 @@
-// flow-typed signature: fc8a8f91a351652d5e0383ef11040308
+// flow-typed signature: 3b505a0bef706b468e91f0fee7e8c261
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-function-bind_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-function-bind' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-function-bind/lib/index' {
+declare module '@babel/plugin-proposal-function-bind/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-function-bind/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-function-bind/lib'>;
+}
 declare module '@babel/plugin-proposal-function-bind/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-function-bind/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-function-bind/lib'>;
 }

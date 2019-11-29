@@ -1,4 +1,4 @@
-// flow-typed signature: d12ecc6ef0a9a52282e8731043344999
+// flow-typed signature: 14c83d77e777715ff63992e72a22863e
 // flow-typed version: <<STUB>>/eslint-plugin-jsx-a11y_v6.1.2/flow_v0.77.0
 
 /**
@@ -282,7 +282,7 @@ declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/schemas-test' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-jsx-a11y/lib/index' {
+declare module 'eslint-plugin-jsx-a11y/lib' {
   declare module.exports: any;
 }
 
@@ -526,7 +526,7 @@ declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/img' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/index' {
+declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles' {
   declare module.exports: any;
 }
 
@@ -862,8 +862,11 @@ declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/parserOptionsMapper-te
 declare module 'eslint-plugin-jsx-a11y/__tests__/src/util/schemas-test.js' {
   declare module.exports: $Exports<'eslint-plugin-jsx-a11y/__tests__/src/util/schemas-test'>;
 }
+declare module 'eslint-plugin-jsx-a11y/lib/index' {
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib'>;
+}
 declare module 'eslint-plugin-jsx-a11y/lib/index.js' {
-  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/index'>;
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib'>;
 }
 declare module 'eslint-plugin-jsx-a11y/lib/rules/accessible-emoji.js' {
   declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/rules/accessible-emoji'>;
@@ -1045,8 +1048,11 @@ declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/hr.js' {
 declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/img.js' {
   declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/util/implicitRoles/img'>;
 }
+declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/index' {
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/util/implicitRoles'>;
+}
 declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/index.js' {
-  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/util/implicitRoles/index'>;
+  declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/util/implicitRoles'>;
 }
 declare module 'eslint-plugin-jsx-a11y/lib/util/implicitRoles/input.js' {
   declare module.exports: $Exports<'eslint-plugin-jsx-a11y/lib/util/implicitRoles/input'>;

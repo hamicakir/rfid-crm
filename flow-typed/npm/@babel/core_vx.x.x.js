@@ -1,4 +1,4 @@
-// flow-typed signature: 546272ab54266a121e54a2e8cb13262c
+// flow-typed signature: 46e6e66752dceb51aa780c9606dcb370
 // flow-typed version: <<STUB>>/@babel/core_v^7.1.6/flow_v0.77.0
 
 /**
@@ -42,7 +42,7 @@ declare module '@babel/core/lib/config/files/index-browser' {
   declare module.exports: any;
 }
 
-declare module '@babel/core/lib/config/files/index' {
+declare module '@babel/core/lib/config/files' {
   declare module.exports: any;
 }
 
@@ -74,7 +74,7 @@ declare module '@babel/core/lib/config/helpers/environment' {
   declare module.exports: any;
 }
 
-declare module '@babel/core/lib/config/index' {
+declare module '@babel/core/lib/config' {
   declare module.exports: any;
 }
 
@@ -114,7 +114,7 @@ declare module '@babel/core/lib/config/validation/removed' {
   declare module.exports: any;
 }
 
-declare module '@babel/core/lib/index' {
+declare module '@babel/core/lib' {
   declare module.exports: any;
 }
 
@@ -158,7 +158,7 @@ declare module '@babel/core/lib/transformation/file/merge-map' {
   declare module.exports: any;
 }
 
-declare module '@babel/core/lib/transformation/index' {
+declare module '@babel/core/lib/transformation' {
   declare module.exports: any;
 }
 
@@ -194,8 +194,11 @@ declare module '@babel/core/lib/config/files/configuration.js' {
 declare module '@babel/core/lib/config/files/index-browser.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/files/index-browser'>;
 }
+declare module '@babel/core/lib/config/files/index' {
+  declare module.exports: $Exports<'@babel/core/lib/config/files'>;
+}
 declare module '@babel/core/lib/config/files/index.js' {
-  declare module.exports: $Exports<'@babel/core/lib/config/files/index'>;
+  declare module.exports: $Exports<'@babel/core/lib/config/files'>;
 }
 declare module '@babel/core/lib/config/files/package.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/files/package'>;
@@ -218,8 +221,11 @@ declare module '@babel/core/lib/config/helpers/config-api.js' {
 declare module '@babel/core/lib/config/helpers/environment.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/helpers/environment'>;
 }
+declare module '@babel/core/lib/config/index' {
+  declare module.exports: $Exports<'@babel/core/lib/config'>;
+}
 declare module '@babel/core/lib/config/index.js' {
-  declare module.exports: $Exports<'@babel/core/lib/config/index'>;
+  declare module.exports: $Exports<'@babel/core/lib/config'>;
 }
 declare module '@babel/core/lib/config/item.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/item'>;
@@ -248,8 +254,11 @@ declare module '@babel/core/lib/config/validation/plugins.js' {
 declare module '@babel/core/lib/config/validation/removed.js' {
   declare module.exports: $Exports<'@babel/core/lib/config/validation/removed'>;
 }
+declare module '@babel/core/lib/index' {
+  declare module.exports: $Exports<'@babel/core/lib'>;
+}
 declare module '@babel/core/lib/index.js' {
-  declare module.exports: $Exports<'@babel/core/lib/index'>;
+  declare module.exports: $Exports<'@babel/core/lib'>;
 }
 declare module '@babel/core/lib/parse.js' {
   declare module.exports: $Exports<'@babel/core/lib/parse'>;
@@ -281,8 +290,11 @@ declare module '@babel/core/lib/transformation/file/generate.js' {
 declare module '@babel/core/lib/transformation/file/merge-map.js' {
   declare module.exports: $Exports<'@babel/core/lib/transformation/file/merge-map'>;
 }
+declare module '@babel/core/lib/transformation/index' {
+  declare module.exports: $Exports<'@babel/core/lib/transformation'>;
+}
 declare module '@babel/core/lib/transformation/index.js' {
-  declare module.exports: $Exports<'@babel/core/lib/transformation/index'>;
+  declare module.exports: $Exports<'@babel/core/lib/transformation'>;
 }
 declare module '@babel/core/lib/transformation/normalize-file.js' {
   declare module.exports: $Exports<'@babel/core/lib/transformation/normalize-file'>;

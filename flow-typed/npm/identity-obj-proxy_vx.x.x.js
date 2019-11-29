@@ -1,4 +1,4 @@
-// flow-typed signature: 4d9a22770ecd742d82984733fa840f5b
+// flow-typed signature: 3c4b5bfea7d0d607cf96b8f4978f599e
 // flow-typed version: <<STUB>>/identity-obj-proxy_v^3.0.0/flow_v0.77.0
 
 /**
@@ -58,7 +58,7 @@ declare module 'identity-obj-proxy/src/__tests__/require-vanilla-test' {
   declare module.exports: any;
 }
 
-declare module 'identity-obj-proxy/src/index' {
+declare module 'identity-obj-proxy/src' {
   declare module.exports: any;
 }
 
@@ -102,8 +102,11 @@ declare module 'identity-obj-proxy/src/__tests__/require-es6-import-test.js' {
 declare module 'identity-obj-proxy/src/__tests__/require-vanilla-test.js' {
   declare module.exports: $Exports<'identity-obj-proxy/src/__tests__/require-vanilla-test'>;
 }
+declare module 'identity-obj-proxy/src/index' {
+  declare module.exports: $Exports<'identity-obj-proxy/src'>;
+}
 declare module 'identity-obj-proxy/src/index.js' {
-  declare module.exports: $Exports<'identity-obj-proxy/src/index'>;
+  declare module.exports: $Exports<'identity-obj-proxy/src'>;
 }
 declare module 'identity-obj-proxy/src/test-redirections/idObjES6Export.js' {
   declare module.exports: $Exports<'identity-obj-proxy/src/test-redirections/idObjES6Export'>;

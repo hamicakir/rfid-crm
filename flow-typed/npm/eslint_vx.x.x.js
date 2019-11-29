@@ -1,4 +1,4 @@
-// flow-typed signature: b3d707a32efc42126ab0d6f157aa99c8
+// flow-typed signature: a4cfb88ed0d3498f89c497b7e8fe297d
 // flow-typed version: <<STUB>>/eslint_v^5.9.0/flow_v0.77.0
 
 /**
@@ -47,6 +47,10 @@ declare module 'eslint/conf/eslint-recommended' {
 }
 
 declare module 'eslint/lib/api' {
+  declare module.exports: any;
+}
+
+declare module 'eslint/lib/built-in-rules-index' {
   declare module.exports: any;
 }
 
@@ -146,6 +150,10 @@ declare module 'eslint/lib/formatters/jslint-xml' {
   declare module.exports: any;
 }
 
+declare module 'eslint/lib/formatters/json-with-metadata' {
+  declare module.exports: any;
+}
+
 declare module 'eslint/lib/formatters/json' {
   declare module.exports: any;
 }
@@ -174,10 +182,6 @@ declare module 'eslint/lib/formatters/visualstudio' {
   declare module.exports: any;
 }
 
-declare module 'eslint/lib/ignored-paths' {
-  declare module.exports: any;
-}
-
 declare module 'eslint/lib/linter' {
   declare module.exports: any;
 }
@@ -187,10 +191,6 @@ declare module 'eslint/lib/load-rules' {
 }
 
 declare module 'eslint/lib/options' {
-  declare module.exports: any;
-}
-
-declare module 'eslint/lib/report-translator' {
   declare module.exports: any;
 }
 
@@ -986,6 +986,10 @@ declare module 'eslint/lib/rules/no-useless-call' {
   declare module.exports: any;
 }
 
+declare module 'eslint/lib/rules/no-useless-catch' {
+  declare module.exports: any;
+}
+
 declare module 'eslint/lib/rules/no-useless-computed-key' {
   declare module.exports: any;
 }
@@ -1083,6 +1087,10 @@ declare module 'eslint/lib/rules/prefer-const' {
 }
 
 declare module 'eslint/lib/rules/prefer-destructuring' {
+  declare module.exports: any;
+}
+
+declare module 'eslint/lib/rules/prefer-named-capture-group' {
   declare module.exports: any;
 }
 
@@ -1290,7 +1298,7 @@ declare module 'eslint/lib/token-store/forward-token-cursor' {
   declare module.exports: any;
 }
 
-declare module 'eslint/lib/token-store/index' {
+declare module 'eslint/lib/token-store' {
   declare module.exports: any;
 }
 
@@ -1322,6 +1330,10 @@ declare module 'eslint/lib/util/ast-utils' {
   declare module.exports: any;
 }
 
+declare module 'eslint/lib/util/config-comment-parser' {
+  declare module.exports: any;
+}
+
 declare module 'eslint/lib/util/file-finder' {
   declare module.exports: any;
 }
@@ -1339,6 +1351,10 @@ declare module 'eslint/lib/util/glob' {
 }
 
 declare module 'eslint/lib/util/hash' {
+  declare module.exports: any;
+}
+
+declare module 'eslint/lib/util/ignored-paths' {
   declare module.exports: any;
 }
 
@@ -1382,6 +1398,10 @@ declare module 'eslint/lib/util/patterns/letters' {
   declare module.exports: any;
 }
 
+declare module 'eslint/lib/util/report-translator' {
+  declare module.exports: any;
+}
+
 declare module 'eslint/lib/util/rule-fixer' {
   declare module.exports: any;
 }
@@ -1410,7 +1430,7 @@ declare module 'eslint/lib/util/traverser' {
   declare module.exports: any;
 }
 
-declare module 'eslint/lib/util/unicode/index' {
+declare module 'eslint/lib/util/unicode' {
   declare module.exports: any;
 }
 
@@ -1455,6 +1475,9 @@ declare module 'eslint/conf/eslint-recommended.js' {
 }
 declare module 'eslint/lib/api.js' {
   declare module.exports: $Exports<'eslint/lib/api'>;
+}
+declare module 'eslint/lib/built-in-rules-index.js' {
+  declare module.exports: $Exports<'eslint/lib/built-in-rules-index'>;
 }
 declare module 'eslint/lib/cli-engine.js' {
   declare module.exports: $Exports<'eslint/lib/cli-engine'>;
@@ -1528,6 +1551,9 @@ declare module 'eslint/lib/formatters/html.js' {
 declare module 'eslint/lib/formatters/jslint-xml.js' {
   declare module.exports: $Exports<'eslint/lib/formatters/jslint-xml'>;
 }
+declare module 'eslint/lib/formatters/json-with-metadata.js' {
+  declare module.exports: $Exports<'eslint/lib/formatters/json-with-metadata'>;
+}
 declare module 'eslint/lib/formatters/json.js' {
   declare module.exports: $Exports<'eslint/lib/formatters/json'>;
 }
@@ -1549,9 +1575,6 @@ declare module 'eslint/lib/formatters/unix.js' {
 declare module 'eslint/lib/formatters/visualstudio.js' {
   declare module.exports: $Exports<'eslint/lib/formatters/visualstudio'>;
 }
-declare module 'eslint/lib/ignored-paths.js' {
-  declare module.exports: $Exports<'eslint/lib/ignored-paths'>;
-}
 declare module 'eslint/lib/linter.js' {
   declare module.exports: $Exports<'eslint/lib/linter'>;
 }
@@ -1560,9 +1583,6 @@ declare module 'eslint/lib/load-rules.js' {
 }
 declare module 'eslint/lib/options.js' {
   declare module.exports: $Exports<'eslint/lib/options'>;
-}
-declare module 'eslint/lib/report-translator.js' {
-  declare module.exports: $Exports<'eslint/lib/report-translator'>;
 }
 declare module 'eslint/lib/rules.js' {
   declare module.exports: $Exports<'eslint/lib/rules'>;
@@ -2158,6 +2178,9 @@ declare module 'eslint/lib/rules/no-use-before-define.js' {
 declare module 'eslint/lib/rules/no-useless-call.js' {
   declare module.exports: $Exports<'eslint/lib/rules/no-useless-call'>;
 }
+declare module 'eslint/lib/rules/no-useless-catch.js' {
+  declare module.exports: $Exports<'eslint/lib/rules/no-useless-catch'>;
+}
 declare module 'eslint/lib/rules/no-useless-computed-key.js' {
   declare module.exports: $Exports<'eslint/lib/rules/no-useless-computed-key'>;
 }
@@ -2232,6 +2255,9 @@ declare module 'eslint/lib/rules/prefer-const.js' {
 }
 declare module 'eslint/lib/rules/prefer-destructuring.js' {
   declare module.exports: $Exports<'eslint/lib/rules/prefer-destructuring'>;
+}
+declare module 'eslint/lib/rules/prefer-named-capture-group.js' {
+  declare module.exports: $Exports<'eslint/lib/rules/prefer-named-capture-group'>;
 }
 declare module 'eslint/lib/rules/prefer-numeric-literals.js' {
   declare module.exports: $Exports<'eslint/lib/rules/prefer-numeric-literals'>;
@@ -2386,8 +2412,11 @@ declare module 'eslint/lib/token-store/forward-token-comment-cursor.js' {
 declare module 'eslint/lib/token-store/forward-token-cursor.js' {
   declare module.exports: $Exports<'eslint/lib/token-store/forward-token-cursor'>;
 }
+declare module 'eslint/lib/token-store/index' {
+  declare module.exports: $Exports<'eslint/lib/token-store'>;
+}
 declare module 'eslint/lib/token-store/index.js' {
-  declare module.exports: $Exports<'eslint/lib/token-store/index'>;
+  declare module.exports: $Exports<'eslint/lib/token-store'>;
 }
 declare module 'eslint/lib/token-store/limit-cursor.js' {
   declare module.exports: $Exports<'eslint/lib/token-store/limit-cursor'>;
@@ -2410,6 +2439,9 @@ declare module 'eslint/lib/util/apply-disable-directives.js' {
 declare module 'eslint/lib/util/ast-utils.js' {
   declare module.exports: $Exports<'eslint/lib/util/ast-utils'>;
 }
+declare module 'eslint/lib/util/config-comment-parser.js' {
+  declare module.exports: $Exports<'eslint/lib/util/config-comment-parser'>;
+}
 declare module 'eslint/lib/util/file-finder.js' {
   declare module.exports: $Exports<'eslint/lib/util/file-finder'>;
 }
@@ -2424,6 +2456,9 @@ declare module 'eslint/lib/util/glob.js' {
 }
 declare module 'eslint/lib/util/hash.js' {
   declare module.exports: $Exports<'eslint/lib/util/hash'>;
+}
+declare module 'eslint/lib/util/ignored-paths.js' {
+  declare module.exports: $Exports<'eslint/lib/util/ignored-paths'>;
 }
 declare module 'eslint/lib/util/interpolate.js' {
   declare module.exports: $Exports<'eslint/lib/util/interpolate'>;
@@ -2455,6 +2490,9 @@ declare module 'eslint/lib/util/path-utils.js' {
 declare module 'eslint/lib/util/patterns/letters.js' {
   declare module.exports: $Exports<'eslint/lib/util/patterns/letters'>;
 }
+declare module 'eslint/lib/util/report-translator.js' {
+  declare module.exports: $Exports<'eslint/lib/util/report-translator'>;
+}
 declare module 'eslint/lib/util/rule-fixer.js' {
   declare module.exports: $Exports<'eslint/lib/util/rule-fixer'>;
 }
@@ -2476,8 +2514,11 @@ declare module 'eslint/lib/util/timing.js' {
 declare module 'eslint/lib/util/traverser.js' {
   declare module.exports: $Exports<'eslint/lib/util/traverser'>;
 }
+declare module 'eslint/lib/util/unicode/index' {
+  declare module.exports: $Exports<'eslint/lib/util/unicode'>;
+}
 declare module 'eslint/lib/util/unicode/index.js' {
-  declare module.exports: $Exports<'eslint/lib/util/unicode/index'>;
+  declare module.exports: $Exports<'eslint/lib/util/unicode'>;
 }
 declare module 'eslint/lib/util/unicode/is-combining-character.js' {
   declare module.exports: $Exports<'eslint/lib/util/unicode/is-combining-character'>;

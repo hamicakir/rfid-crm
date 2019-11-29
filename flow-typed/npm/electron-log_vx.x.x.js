@@ -1,4 +1,4 @@
-// flow-typed signature: ad4ea9a3326c436d25e86544ec4b1499
+// flow-typed signature: bfc0af7b41207fafb7be656ed057e778
 // flow-typed version: <<STUB>>/electron-log_v^2.2.17/flow_v0.77.0
 
 /**
@@ -46,7 +46,7 @@ declare module 'electron-log/lib/transports/file/get-app-name' {
   declare module.exports: any;
 }
 
-declare module 'electron-log/lib/transports/file/index' {
+declare module 'electron-log/lib/transports/file' {
   declare module.exports: any;
 }
 
@@ -91,8 +91,11 @@ declare module 'electron-log/lib/transports/file/find-log-path.js' {
 declare module 'electron-log/lib/transports/file/get-app-name.js' {
   declare module.exports: $Exports<'electron-log/lib/transports/file/get-app-name'>;
 }
+declare module 'electron-log/lib/transports/file/index' {
+  declare module.exports: $Exports<'electron-log/lib/transports/file'>;
+}
 declare module 'electron-log/lib/transports/file/index.js' {
-  declare module.exports: $Exports<'electron-log/lib/transports/file/index'>;
+  declare module.exports: $Exports<'electron-log/lib/transports/file'>;
 }
 declare module 'electron-log/lib/transports/log-s.js' {
   declare module.exports: $Exports<'electron-log/lib/transports/log-s'>;

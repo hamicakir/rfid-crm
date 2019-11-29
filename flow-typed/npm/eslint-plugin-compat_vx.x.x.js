@@ -1,4 +1,4 @@
-// flow-typed signature: e9bac015392d81b4cc8b8bffb9d12bb2
+// flow-typed signature: 1793d5e322e16328fecaea29a5f765b3
 // flow-typed version: <<STUB>>/eslint-plugin-compat_v^2.6.3/flow_v0.77.0
 
 /**
@@ -26,7 +26,7 @@ declare module 'eslint-plugin-compat/lib/config/recommended' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-compat/lib/index' {
+declare module 'eslint-plugin-compat/lib' {
   declare module.exports: any;
 }
 
@@ -42,7 +42,7 @@ declare module 'eslint-plugin-compat/lib/providers/CanIUseProvider' {
   declare module.exports: any;
 }
 
-declare module 'eslint-plugin-compat/lib/providers/index' {
+declare module 'eslint-plugin-compat/lib/providers' {
   declare module.exports: any;
 }
 
@@ -62,8 +62,11 @@ declare module 'eslint-plugin-compat/lib/Versioning' {
 declare module 'eslint-plugin-compat/lib/config/recommended.js' {
   declare module.exports: $Exports<'eslint-plugin-compat/lib/config/recommended'>;
 }
+declare module 'eslint-plugin-compat/lib/index' {
+  declare module.exports: $Exports<'eslint-plugin-compat/lib'>;
+}
 declare module 'eslint-plugin-compat/lib/index.js' {
-  declare module.exports: $Exports<'eslint-plugin-compat/lib/index'>;
+  declare module.exports: $Exports<'eslint-plugin-compat/lib'>;
 }
 declare module 'eslint-plugin-compat/lib/Lint.js' {
   declare module.exports: $Exports<'eslint-plugin-compat/lib/Lint'>;
@@ -74,8 +77,11 @@ declare module 'eslint-plugin-compat/lib/LintTypes.js' {
 declare module 'eslint-plugin-compat/lib/providers/CanIUseProvider.js' {
   declare module.exports: $Exports<'eslint-plugin-compat/lib/providers/CanIUseProvider'>;
 }
+declare module 'eslint-plugin-compat/lib/providers/index' {
+  declare module.exports: $Exports<'eslint-plugin-compat/lib/providers'>;
+}
 declare module 'eslint-plugin-compat/lib/providers/index.js' {
-  declare module.exports: $Exports<'eslint-plugin-compat/lib/providers/index'>;
+  declare module.exports: $Exports<'eslint-plugin-compat/lib/providers'>;
 }
 declare module 'eslint-plugin-compat/lib/providers/KangaxProvider.js' {
   declare module.exports: $Exports<'eslint-plugin-compat/lib/providers/KangaxProvider'>;

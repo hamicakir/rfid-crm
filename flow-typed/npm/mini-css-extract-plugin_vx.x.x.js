@@ -1,4 +1,4 @@
-// flow-typed signature: 49b97163f968ef5df7eb008464b1d2bd
+// flow-typed signature: ee9aaf6cc5e9df2a3777b6a8e6558ae0
 // flow-typed version: <<STUB>>/mini-css-extract-plugin_v^0.4.4/flow_v0.77.0
 
 /**
@@ -26,7 +26,7 @@ declare module 'mini-css-extract-plugin/dist/cjs' {
   declare module.exports: any;
 }
 
-declare module 'mini-css-extract-plugin/dist/index' {
+declare module 'mini-css-extract-plugin/dist' {
   declare module.exports: any;
 }
 
@@ -38,8 +38,11 @@ declare module 'mini-css-extract-plugin/dist/loader' {
 declare module 'mini-css-extract-plugin/dist/cjs.js' {
   declare module.exports: $Exports<'mini-css-extract-plugin/dist/cjs'>;
 }
+declare module 'mini-css-extract-plugin/dist/index' {
+  declare module.exports: $Exports<'mini-css-extract-plugin/dist'>;
+}
 declare module 'mini-css-extract-plugin/dist/index.js' {
-  declare module.exports: $Exports<'mini-css-extract-plugin/dist/index'>;
+  declare module.exports: $Exports<'mini-css-extract-plugin/dist'>;
 }
 declare module 'mini-css-extract-plugin/dist/loader.js' {
   declare module.exports: $Exports<'mini-css-extract-plugin/dist/loader'>;

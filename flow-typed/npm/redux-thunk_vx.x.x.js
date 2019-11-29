@@ -1,4 +1,4 @@
-// flow-typed signature: 346629e8cf26d9d2b8681be7df322457
+// flow-typed signature: f82457f698df0fb57ad800b4927c50b9
 // flow-typed version: <<STUB>>/redux-thunk_v^2.3.0/flow_v0.77.0
 
 /**
@@ -30,15 +30,15 @@ declare module 'redux-thunk/dist/redux-thunk.min' {
   declare module.exports: any;
 }
 
-declare module 'redux-thunk/es/index' {
+declare module 'redux-thunk/es' {
   declare module.exports: any;
 }
 
-declare module 'redux-thunk/lib/index' {
+declare module 'redux-thunk/lib' {
   declare module.exports: any;
 }
 
-declare module 'redux-thunk/src/index' {
+declare module 'redux-thunk/src' {
   declare module.exports: any;
 }
 
@@ -49,12 +49,21 @@ declare module 'redux-thunk/dist/redux-thunk.js' {
 declare module 'redux-thunk/dist/redux-thunk.min.js' {
   declare module.exports: $Exports<'redux-thunk/dist/redux-thunk.min'>;
 }
+declare module 'redux-thunk/es/index' {
+  declare module.exports: $Exports<'redux-thunk/es'>;
+}
 declare module 'redux-thunk/es/index.js' {
-  declare module.exports: $Exports<'redux-thunk/es/index'>;
+  declare module.exports: $Exports<'redux-thunk/es'>;
+}
+declare module 'redux-thunk/lib/index' {
+  declare module.exports: $Exports<'redux-thunk/lib'>;
 }
 declare module 'redux-thunk/lib/index.js' {
-  declare module.exports: $Exports<'redux-thunk/lib/index'>;
+  declare module.exports: $Exports<'redux-thunk/lib'>;
+}
+declare module 'redux-thunk/src/index' {
+  declare module.exports: $Exports<'redux-thunk/src'>;
 }
 declare module 'redux-thunk/src/index.js' {
-  declare module.exports: $Exports<'redux-thunk/src/index'>;
+  declare module.exports: $Exports<'redux-thunk/src'>;
 }

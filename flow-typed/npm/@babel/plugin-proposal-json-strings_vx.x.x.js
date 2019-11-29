@@ -1,4 +1,4 @@
-// flow-typed signature: 406790b8e8d4d7ccf7147e2657eea15d
+// flow-typed signature: 41e0fb066705e79015b8d02d9d4d5913
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-json-strings_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-json-strings' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-json-strings/lib/index' {
+declare module '@babel/plugin-proposal-json-strings/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-json-strings/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-json-strings/lib'>;
+}
 declare module '@babel/plugin-proposal-json-strings/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-json-strings/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-json-strings/lib'>;
 }

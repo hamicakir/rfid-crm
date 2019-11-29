@@ -1,4 +1,4 @@
-// flow-typed signature: 2d074a571dd34aca6c792d99dbeb1c40
+// flow-typed signature: ddbb75c2a73a45749141c084da498f2b
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-nullish-coalescing-operator_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-nullish-coalescing-operator' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-nullish-coalescing-operator/lib/index' {
+declare module '@babel/plugin-proposal-nullish-coalescing-operator/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-nullish-coalescing-operator/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-nullish-coalescing-operator/lib'>;
+}
 declare module '@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-nullish-coalescing-operator/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-nullish-coalescing-operator/lib'>;
 }

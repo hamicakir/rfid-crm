@@ -1,4 +1,4 @@
-// flow-typed signature: 58ea33b8e617e9ad62f3c65eae95644e
+// flow-typed signature: 5865ddd9f6e76df64b5fa43ba782deed
 // flow-typed version: <<STUB>>/webpack-bundle-analyzer_v^3.0.3/flow_v0.77.0
 
 /**
@@ -34,7 +34,7 @@ declare module 'webpack-bundle-analyzer/lib/BundleAnalyzerPlugin' {
   declare module.exports: any;
 }
 
-declare module 'webpack-bundle-analyzer/lib/index' {
+declare module 'webpack-bundle-analyzer/lib' {
   declare module.exports: any;
 }
 
@@ -102,7 +102,7 @@ declare module 'webpack-bundle-analyzer/src/BundleAnalyzerPlugin' {
   declare module.exports: any;
 }
 
-declare module 'webpack-bundle-analyzer/src/index' {
+declare module 'webpack-bundle-analyzer/src' {
   declare module.exports: any;
 }
 
@@ -164,8 +164,11 @@ declare module 'webpack-bundle-analyzer/lib/bin/analyzer.js' {
 declare module 'webpack-bundle-analyzer/lib/BundleAnalyzerPlugin.js' {
   declare module.exports: $Exports<'webpack-bundle-analyzer/lib/BundleAnalyzerPlugin'>;
 }
+declare module 'webpack-bundle-analyzer/lib/index' {
+  declare module.exports: $Exports<'webpack-bundle-analyzer/lib'>;
+}
 declare module 'webpack-bundle-analyzer/lib/index.js' {
-  declare module.exports: $Exports<'webpack-bundle-analyzer/lib/index'>;
+  declare module.exports: $Exports<'webpack-bundle-analyzer/lib'>;
 }
 declare module 'webpack-bundle-analyzer/lib/Logger.js' {
   declare module.exports: $Exports<'webpack-bundle-analyzer/lib/Logger'>;
@@ -215,8 +218,11 @@ declare module 'webpack-bundle-analyzer/src/bin/analyzer.js' {
 declare module 'webpack-bundle-analyzer/src/BundleAnalyzerPlugin.js' {
   declare module.exports: $Exports<'webpack-bundle-analyzer/src/BundleAnalyzerPlugin'>;
 }
+declare module 'webpack-bundle-analyzer/src/index' {
+  declare module.exports: $Exports<'webpack-bundle-analyzer/src'>;
+}
 declare module 'webpack-bundle-analyzer/src/index.js' {
-  declare module.exports: $Exports<'webpack-bundle-analyzer/src/index'>;
+  declare module.exports: $Exports<'webpack-bundle-analyzer/src'>;
 }
 declare module 'webpack-bundle-analyzer/src/Logger.js' {
   declare module.exports: $Exports<'webpack-bundle-analyzer/src/Logger'>;

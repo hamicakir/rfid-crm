@@ -1,14 +1,23 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .container {
-  position: absolute;
-  top: 30%;
-  left: 10px;
-  text-align: center;
+  width: 50%;
+  padding: 30px;
+  background-color: #42a7f2;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-.container h2 {
-  font-size: 5rem;
-}
-
-.container a {
-  font-size: 1.4rem;
+.setupContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

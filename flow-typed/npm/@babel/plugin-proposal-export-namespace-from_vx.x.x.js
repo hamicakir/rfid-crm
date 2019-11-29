@@ -1,4 +1,4 @@
-// flow-typed signature: 7accb2e3fa1883e6ed06bcc9a729ea8f
+// flow-typed signature: 734debaaab1ae69164467455b3624840
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-export-namespace-from_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-export-namespace-from' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-export-namespace-from/lib/index' {
+declare module '@babel/plugin-proposal-export-namespace-from/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-export-namespace-from/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-export-namespace-from/lib'>;
+}
 declare module '@babel/plugin-proposal-export-namespace-from/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-export-namespace-from/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-export-namespace-from/lib'>;
 }

@@ -1,4 +1,4 @@
-// flow-typed signature: 7286488a11295a81868a1c12b3c7592f
+// flow-typed signature: b99169299f77245852468209c0c336ee
 // flow-typed version: <<STUB>>/webpack-merge_v^4.1.4/flow_v0.77.0
 
 /**
@@ -22,7 +22,7 @@ declare module 'webpack-merge' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'webpack-merge/lib/index' {
+declare module 'webpack-merge/lib' {
   declare module.exports: any;
 }
 
@@ -34,17 +34,20 @@ declare module 'webpack-merge/lib/join-arrays' {
   declare module.exports: any;
 }
 
+declare module 'webpack-merge/lib/types' {
+  declare module.exports: any;
+}
+
 declare module 'webpack-merge/lib/unique' {
   declare module.exports: any;
 }
 
-declare module 'webpack-merge/lib/unite-rules' {
-  declare module.exports: any;
-}
-
 // Filename aliases
+declare module 'webpack-merge/lib/index' {
+  declare module.exports: $Exports<'webpack-merge/lib'>;
+}
 declare module 'webpack-merge/lib/index.js' {
-  declare module.exports: $Exports<'webpack-merge/lib/index'>;
+  declare module.exports: $Exports<'webpack-merge/lib'>;
 }
 declare module 'webpack-merge/lib/join-arrays-smart.js' {
   declare module.exports: $Exports<'webpack-merge/lib/join-arrays-smart'>;
@@ -52,9 +55,9 @@ declare module 'webpack-merge/lib/join-arrays-smart.js' {
 declare module 'webpack-merge/lib/join-arrays.js' {
   declare module.exports: $Exports<'webpack-merge/lib/join-arrays'>;
 }
+declare module 'webpack-merge/lib/types.js' {
+  declare module.exports: $Exports<'webpack-merge/lib/types'>;
+}
 declare module 'webpack-merge/lib/unique.js' {
   declare module.exports: $Exports<'webpack-merge/lib/unique'>;
-}
-declare module 'webpack-merge/lib/unite-rules.js' {
-  declare module.exports: $Exports<'webpack-merge/lib/unite-rules'>;
 }

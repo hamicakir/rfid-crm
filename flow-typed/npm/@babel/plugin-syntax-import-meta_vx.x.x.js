@@ -1,4 +1,4 @@
-// flow-typed signature: 0322c4a0dd842452a34d1336b1f2c01c
+// flow-typed signature: 69a53c772a402e3e597dcd4d5f2b5348
 // flow-typed version: <<STUB>>/@babel/plugin-syntax-import-meta_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-syntax-import-meta' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-syntax-import-meta/lib/index' {
+declare module '@babel/plugin-syntax-import-meta/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-syntax-import-meta/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-syntax-import-meta/lib'>;
+}
 declare module '@babel/plugin-syntax-import-meta/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-syntax-import-meta/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-syntax-import-meta/lib'>;
 }

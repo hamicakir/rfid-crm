@@ -1,4 +1,4 @@
-// flow-typed signature: fa646a93a07c0c4d04ab29df7e648ac3
+// flow-typed signature: 2abd351f3684370434244638a209f5dc
 // flow-typed version: <<STUB>>/redux-logger_v^3.0.6/flow_v0.77.0
 
 /**
@@ -42,7 +42,7 @@ declare module 'redux-logger/src/helpers' {
   declare module.exports: any;
 }
 
-declare module 'redux-logger/src/index' {
+declare module 'redux-logger/src' {
   declare module.exports: any;
 }
 
@@ -62,6 +62,9 @@ declare module 'redux-logger/src/diff.js' {
 declare module 'redux-logger/src/helpers.js' {
   declare module.exports: $Exports<'redux-logger/src/helpers'>;
 }
+declare module 'redux-logger/src/index' {
+  declare module.exports: $Exports<'redux-logger/src'>;
+}
 declare module 'redux-logger/src/index.js' {
-  declare module.exports: $Exports<'redux-logger/src/index'>;
+  declare module.exports: $Exports<'redux-logger/src'>;
 }

@@ -1,4 +1,4 @@
-// flow-typed signature: c5f5a5e299818f555eabf2e17cb2992a
+// flow-typed signature: cec1d56b73c5d581dc0fd6dede6cda2c
 // flow-typed version: <<STUB>>/@babel/preset-env_v^7.1.6/flow_v0.77.0
 
 /**
@@ -22,7 +22,15 @@ declare module '@babel/preset-env' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/preset-env/data/built-in-features' {
+declare module '@babel/preset-env/data/built-ins.json' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/data/corejs2-built-in-features' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/data/overlapping-plugins' {
   declare module.exports: any;
 }
 
@@ -42,23 +50,19 @@ declare module '@babel/preset-env/lib/available-plugins' {
   declare module.exports: any;
 }
 
-declare module '@babel/preset-env/lib/built-in-definitions' {
-  declare module.exports: any;
-}
-
 declare module '@babel/preset-env/lib/debug' {
   declare module.exports: any;
 }
 
-declare module '@babel/preset-env/lib/default-includes' {
+declare module '@babel/preset-env/lib/filter-items' {
   declare module.exports: any;
 }
 
-declare module '@babel/preset-env/lib/defaults' {
+declare module '@babel/preset-env/lib/get-option-specific-excludes' {
   declare module.exports: any;
 }
 
-declare module '@babel/preset-env/lib/index' {
+declare module '@babel/preset-env/lib' {
   declare module.exports: any;
 }
 
@@ -74,15 +78,47 @@ declare module '@babel/preset-env/lib/options' {
   declare module.exports: any;
 }
 
+declare module '@babel/preset-env/lib/polyfills/corejs2/built-in-definitions' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs2/entry-plugin' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs2/get-platform-specific-default' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs2/usage-plugin' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs3/built-in-definitions' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs3/entry-plugin' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs3/shipped-proposals' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/corejs3/usage-plugin' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/regenerator/entry-plugin' {
+  declare module.exports: any;
+}
+
+declare module '@babel/preset-env/lib/polyfills/regenerator/usage-plugin' {
+  declare module.exports: any;
+}
+
 declare module '@babel/preset-env/lib/targets-parser' {
-  declare module.exports: any;
-}
-
-declare module '@babel/preset-env/lib/use-built-ins-entry-plugin' {
-  declare module.exports: any;
-}
-
-declare module '@babel/preset-env/lib/use-built-ins-plugin' {
   declare module.exports: any;
 }
 
@@ -91,8 +127,14 @@ declare module '@babel/preset-env/lib/utils' {
 }
 
 // Filename aliases
-declare module '@babel/preset-env/data/built-in-features.js' {
-  declare module.exports: $Exports<'@babel/preset-env/data/built-in-features'>;
+declare module '@babel/preset-env/data/built-ins.json.js' {
+  declare module.exports: $Exports<'@babel/preset-env/data/built-ins.json'>;
+}
+declare module '@babel/preset-env/data/corejs2-built-in-features.js' {
+  declare module.exports: $Exports<'@babel/preset-env/data/corejs2-built-in-features'>;
+}
+declare module '@babel/preset-env/data/overlapping-plugins.js' {
+  declare module.exports: $Exports<'@babel/preset-env/data/overlapping-plugins'>;
 }
 declare module '@babel/preset-env/data/plugin-features.js' {
   declare module.exports: $Exports<'@babel/preset-env/data/plugin-features'>;
@@ -106,20 +148,20 @@ declare module '@babel/preset-env/data/unreleased-labels.js' {
 declare module '@babel/preset-env/lib/available-plugins.js' {
   declare module.exports: $Exports<'@babel/preset-env/lib/available-plugins'>;
 }
-declare module '@babel/preset-env/lib/built-in-definitions.js' {
-  declare module.exports: $Exports<'@babel/preset-env/lib/built-in-definitions'>;
-}
 declare module '@babel/preset-env/lib/debug.js' {
   declare module.exports: $Exports<'@babel/preset-env/lib/debug'>;
 }
-declare module '@babel/preset-env/lib/default-includes.js' {
-  declare module.exports: $Exports<'@babel/preset-env/lib/default-includes'>;
+declare module '@babel/preset-env/lib/filter-items.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/filter-items'>;
 }
-declare module '@babel/preset-env/lib/defaults.js' {
-  declare module.exports: $Exports<'@babel/preset-env/lib/defaults'>;
+declare module '@babel/preset-env/lib/get-option-specific-excludes.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/get-option-specific-excludes'>;
+}
+declare module '@babel/preset-env/lib/index' {
+  declare module.exports: $Exports<'@babel/preset-env/lib'>;
 }
 declare module '@babel/preset-env/lib/index.js' {
-  declare module.exports: $Exports<'@babel/preset-env/lib/index'>;
+  declare module.exports: $Exports<'@babel/preset-env/lib'>;
 }
 declare module '@babel/preset-env/lib/module-transformations.js' {
   declare module.exports: $Exports<'@babel/preset-env/lib/module-transformations'>;
@@ -130,14 +172,38 @@ declare module '@babel/preset-env/lib/normalize-options.js' {
 declare module '@babel/preset-env/lib/options.js' {
   declare module.exports: $Exports<'@babel/preset-env/lib/options'>;
 }
+declare module '@babel/preset-env/lib/polyfills/corejs2/built-in-definitions.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs2/built-in-definitions'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs2/entry-plugin.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs2/entry-plugin'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs2/get-platform-specific-default.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs2/get-platform-specific-default'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs2/usage-plugin.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs2/usage-plugin'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs3/built-in-definitions.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs3/built-in-definitions'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs3/entry-plugin.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs3/entry-plugin'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs3/shipped-proposals.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs3/shipped-proposals'>;
+}
+declare module '@babel/preset-env/lib/polyfills/corejs3/usage-plugin.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/corejs3/usage-plugin'>;
+}
+declare module '@babel/preset-env/lib/polyfills/regenerator/entry-plugin.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/regenerator/entry-plugin'>;
+}
+declare module '@babel/preset-env/lib/polyfills/regenerator/usage-plugin.js' {
+  declare module.exports: $Exports<'@babel/preset-env/lib/polyfills/regenerator/usage-plugin'>;
+}
 declare module '@babel/preset-env/lib/targets-parser.js' {
   declare module.exports: $Exports<'@babel/preset-env/lib/targets-parser'>;
-}
-declare module '@babel/preset-env/lib/use-built-ins-entry-plugin.js' {
-  declare module.exports: $Exports<'@babel/preset-env/lib/use-built-ins-entry-plugin'>;
-}
-declare module '@babel/preset-env/lib/use-built-ins-plugin.js' {
-  declare module.exports: $Exports<'@babel/preset-env/lib/use-built-ins-plugin'>;
 }
 declare module '@babel/preset-env/lib/utils.js' {
   declare module.exports: $Exports<'@babel/preset-env/lib/utils'>;

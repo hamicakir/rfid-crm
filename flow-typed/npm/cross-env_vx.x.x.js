@@ -1,4 +1,4 @@
-// flow-typed signature: c2d49a966e910b62b6510685c34927d2
+// flow-typed signature: aec62fa27f37e7b7c9f93e8119c6b797
 // flow-typed version: <<STUB>>/cross-env_v^5.2.0/flow_v0.77.0
 
 /**
@@ -34,7 +34,11 @@ declare module 'cross-env/dist/command' {
   declare module.exports: any;
 }
 
-declare module 'cross-env/dist/index' {
+declare module 'cross-env/dist' {
+  declare module.exports: any;
+}
+
+declare module 'cross-env/dist/is-windows' {
   declare module.exports: any;
 }
 
@@ -52,8 +56,14 @@ declare module 'cross-env/dist/bin/cross-env.js' {
 declare module 'cross-env/dist/command.js' {
   declare module.exports: $Exports<'cross-env/dist/command'>;
 }
+declare module 'cross-env/dist/index' {
+  declare module.exports: $Exports<'cross-env/dist'>;
+}
 declare module 'cross-env/dist/index.js' {
-  declare module.exports: $Exports<'cross-env/dist/index'>;
+  declare module.exports: $Exports<'cross-env/dist'>;
+}
+declare module 'cross-env/dist/is-windows.js' {
+  declare module.exports: $Exports<'cross-env/dist/is-windows'>;
 }
 declare module 'cross-env/dist/variable.js' {
   declare module.exports: $Exports<'cross-env/dist/variable'>;

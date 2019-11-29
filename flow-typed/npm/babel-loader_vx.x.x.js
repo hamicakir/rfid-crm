@@ -1,4 +1,4 @@
-// flow-typed signature: 80e9a5aa9e9ffea95360db2f9759f6c9
+// flow-typed signature: dcfbdd6cdaa240c373aead04695a17d0
 // flow-typed version: <<STUB>>/babel-loader_v^8.0.4/flow_v0.77.0
 
 /**
@@ -30,7 +30,7 @@ declare module 'babel-loader/lib/Error' {
   declare module.exports: any;
 }
 
-declare module 'babel-loader/lib/index' {
+declare module 'babel-loader/lib' {
   declare module.exports: any;
 }
 
@@ -49,8 +49,11 @@ declare module 'babel-loader/lib/cache.js' {
 declare module 'babel-loader/lib/Error.js' {
   declare module.exports: $Exports<'babel-loader/lib/Error'>;
 }
+declare module 'babel-loader/lib/index' {
+  declare module.exports: $Exports<'babel-loader/lib'>;
+}
 declare module 'babel-loader/lib/index.js' {
-  declare module.exports: $Exports<'babel-loader/lib/index'>;
+  declare module.exports: $Exports<'babel-loader/lib'>;
 }
 declare module 'babel-loader/lib/injectCaller.js' {
   declare module.exports: $Exports<'babel-loader/lib/injectCaller'>;

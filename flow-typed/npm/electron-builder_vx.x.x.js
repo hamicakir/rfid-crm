@@ -1,4 +1,4 @@
-// flow-typed signature: e8ccebeee0ea49f3d295c1d4bd5347ad
+// flow-typed signature: 54b206e3f36e23ebc40fad2b64e97164
 // flow-typed version: <<STUB>>/electron-builder_v^20.34.0/flow_v0.77.0
 
 /**
@@ -42,7 +42,7 @@ declare module 'electron-builder/out/cli/start' {
   declare module.exports: any;
 }
 
-declare module 'electron-builder/out/index' {
+declare module 'electron-builder/out' {
   declare module.exports: any;
 }
 
@@ -62,6 +62,9 @@ declare module 'electron-builder/out/cli/install-app-deps.js' {
 declare module 'electron-builder/out/cli/start.js' {
   declare module.exports: $Exports<'electron-builder/out/cli/start'>;
 }
+declare module 'electron-builder/out/index' {
+  declare module.exports: $Exports<'electron-builder/out'>;
+}
 declare module 'electron-builder/out/index.js' {
-  declare module.exports: $Exports<'electron-builder/out/index'>;
+  declare module.exports: $Exports<'electron-builder/out'>;
 }

@@ -1,4 +1,4 @@
-// flow-typed signature: d670ede2a4f3a06f6bdf6d9d12d00765
+// flow-typed signature: d9dfd680be1ecf6a0d258b1eb2635e15
 // flow-typed version: <<STUB>>/eslint-config-prettier_v^3.3.0/flow_v0.77.0
 
 /**
@@ -22,6 +22,10 @@ declare module 'eslint-config-prettier' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
+declare module 'eslint-config-prettier/babel' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-config-prettier/bin/cli' {
   declare module.exports: any;
 }
@@ -42,6 +46,10 @@ declare module 'eslint-config-prettier/standard' {
   declare module.exports: any;
 }
 
+declare module 'eslint-config-prettier/typescript' {
+  declare module.exports: any;
+}
+
 declare module 'eslint-config-prettier/unicorn' {
   declare module.exports: any;
 }
@@ -51,6 +59,9 @@ declare module 'eslint-config-prettier/vue' {
 }
 
 // Filename aliases
+declare module 'eslint-config-prettier/babel.js' {
+  declare module.exports: $Exports<'eslint-config-prettier/babel'>;
+}
 declare module 'eslint-config-prettier/bin/cli.js' {
   declare module.exports: $Exports<'eslint-config-prettier/bin/cli'>;
 }
@@ -71,6 +82,9 @@ declare module 'eslint-config-prettier/react.js' {
 }
 declare module 'eslint-config-prettier/standard.js' {
   declare module.exports: $Exports<'eslint-config-prettier/standard'>;
+}
+declare module 'eslint-config-prettier/typescript.js' {
+  declare module.exports: $Exports<'eslint-config-prettier/typescript'>;
 }
 declare module 'eslint-config-prettier/unicorn.js' {
   declare module.exports: $Exports<'eslint-config-prettier/unicorn'>;

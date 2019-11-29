@@ -1,4 +1,4 @@
-// flow-typed signature: 199d632ea4bed2a01404611ed2be540d
+// flow-typed signature: 7dc7a4bddccecb88fa9eb6b1cd8a2673
 // flow-typed version: <<STUB>>/testcafe-browser-provider-electron_v^0.0.6/flow_v0.77.0
 
 /**
@@ -38,7 +38,7 @@ declare module 'testcafe-browser-provider-electron/lib/hook' {
   declare module.exports: any;
 }
 
-declare module 'testcafe-browser-provider-electron/lib/index' {
+declare module 'testcafe-browser-provider-electron/lib' {
   declare module.exports: any;
 }
 
@@ -46,7 +46,7 @@ declare module 'testcafe-browser-provider-electron/lib/injectable/electron-mocks
   declare module.exports: any;
 }
 
-declare module 'testcafe-browser-provider-electron/lib/injectable/index' {
+declare module 'testcafe-browser-provider-electron/lib/injectable' {
   declare module.exports: any;
 }
 
@@ -103,14 +103,20 @@ declare module 'testcafe-browser-provider-electron/lib/helpers.js' {
 declare module 'testcafe-browser-provider-electron/lib/hook.js' {
   declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/hook'>;
 }
+declare module 'testcafe-browser-provider-electron/lib/index' {
+  declare module.exports: $Exports<'testcafe-browser-provider-electron/lib'>;
+}
 declare module 'testcafe-browser-provider-electron/lib/index.js' {
-  declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/index'>;
+  declare module.exports: $Exports<'testcafe-browser-provider-electron/lib'>;
 }
 declare module 'testcafe-browser-provider-electron/lib/injectable/electron-mocks.js' {
   declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/injectable/electron-mocks'>;
 }
+declare module 'testcafe-browser-provider-electron/lib/injectable/index' {
+  declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/injectable'>;
+}
 declare module 'testcafe-browser-provider-electron/lib/injectable/index.js' {
-  declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/injectable/index'>;
+  declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/injectable'>;
 }
 declare module 'testcafe-browser-provider-electron/lib/ipc.js' {
   declare module.exports: $Exports<'testcafe-browser-provider-electron/lib/ipc'>;

@@ -1,7 +1,9 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import routes from '../constants/routes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCogs } from '@fortawesome/free-solid-svg-icons';
+
 import styles from './Home.css';
 
 type Props = {
@@ -15,9 +17,16 @@ export default class Home extends Component<Props> {
     const { version } = this.props;
 
     return (
-      <div className={styles.container} data-tid="container">
-        <h2>Home - Version: {version} </h2>
-        <Link to={routes.COUNTER}>to Counter</Link>
+      <div className={styles.flex}>
+        <div className={styles.container}>
+          <h2>Home - Version: {version} </h2>
+          <div className={styles.setupContainer}>
+            <Link to="/counter" className={styles.setupContainer}>
+              <FontAwesomeIcon icon={faCogs} color="#fff" size="2x" />
+              <p>Setup New Device</p>
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }

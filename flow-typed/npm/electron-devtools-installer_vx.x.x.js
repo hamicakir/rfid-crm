@@ -1,4 +1,4 @@
-// flow-typed signature: be321ca0eddca2c9c887393fddd13467
+// flow-typed signature: e354175d1f8ab79b9f5dfbfb65d9f0ae
 // flow-typed version: <<STUB>>/electron-devtools-installer_v^2.2.4/flow_v0.77.0
 
 /**
@@ -26,7 +26,7 @@ declare module 'electron-devtools-installer/dist/downloadChromeExtension' {
   declare module.exports: any;
 }
 
-declare module 'electron-devtools-installer/dist/index' {
+declare module 'electron-devtools-installer/dist' {
   declare module.exports: any;
 }
 
@@ -38,7 +38,7 @@ declare module 'electron-devtools-installer/src/downloadChromeExtension' {
   declare module.exports: any;
 }
 
-declare module 'electron-devtools-installer/src/index' {
+declare module 'electron-devtools-installer/src' {
   declare module.exports: any;
 }
 
@@ -50,8 +50,11 @@ declare module 'electron-devtools-installer/src/utils' {
 declare module 'electron-devtools-installer/dist/downloadChromeExtension.js' {
   declare module.exports: $Exports<'electron-devtools-installer/dist/downloadChromeExtension'>;
 }
+declare module 'electron-devtools-installer/dist/index' {
+  declare module.exports: $Exports<'electron-devtools-installer/dist'>;
+}
 declare module 'electron-devtools-installer/dist/index.js' {
-  declare module.exports: $Exports<'electron-devtools-installer/dist/index'>;
+  declare module.exports: $Exports<'electron-devtools-installer/dist'>;
 }
 declare module 'electron-devtools-installer/dist/utils.js' {
   declare module.exports: $Exports<'electron-devtools-installer/dist/utils'>;
@@ -59,8 +62,11 @@ declare module 'electron-devtools-installer/dist/utils.js' {
 declare module 'electron-devtools-installer/src/downloadChromeExtension.js' {
   declare module.exports: $Exports<'electron-devtools-installer/src/downloadChromeExtension'>;
 }
+declare module 'electron-devtools-installer/src/index' {
+  declare module.exports: $Exports<'electron-devtools-installer/src'>;
+}
 declare module 'electron-devtools-installer/src/index.js' {
-  declare module.exports: $Exports<'electron-devtools-installer/src/index'>;
+  declare module.exports: $Exports<'electron-devtools-installer/src'>;
 }
 declare module 'electron-devtools-installer/src/utils.js' {
   declare module.exports: $Exports<'electron-devtools-installer/src/utils'>;

@@ -1,4 +1,4 @@
-// flow-typed signature: c7c77ad6cbd66d8c153528afd2d4e3b2
+// flow-typed signature: 7739ac0b119b74e47e9da55984fac9c8
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-do-expressions_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-do-expressions' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-do-expressions/lib/index' {
+declare module '@babel/plugin-proposal-do-expressions/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-do-expressions/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-do-expressions/lib'>;
+}
 declare module '@babel/plugin-proposal-do-expressions/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-do-expressions/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-do-expressions/lib'>;
 }

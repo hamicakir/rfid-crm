@@ -1,4 +1,4 @@
-// flow-typed signature: bf3d555f8dd323d66d43a5e69388ee10
+// flow-typed signature: 4b52a50eab0c662283ed1f153e90e3f5
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-decorators_v^7.1.6/flow_v0.77.0
 
 /**
@@ -22,7 +22,7 @@ declare module '@babel/plugin-proposal-decorators' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-decorators/lib/index' {
+declare module '@babel/plugin-proposal-decorators/lib' {
   declare module.exports: any;
 }
 
@@ -30,17 +30,13 @@ declare module '@babel/plugin-proposal-decorators/lib/transformer-legacy' {
   declare module.exports: any;
 }
 
-declare module '@babel/plugin-proposal-decorators/lib/transformer' {
-  declare module.exports: any;
-}
-
 // Filename aliases
+declare module '@babel/plugin-proposal-decorators/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-decorators/lib'>;
+}
 declare module '@babel/plugin-proposal-decorators/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-decorators/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-decorators/lib'>;
 }
 declare module '@babel/plugin-proposal-decorators/lib/transformer-legacy.js' {
   declare module.exports: $Exports<'@babel/plugin-proposal-decorators/lib/transformer-legacy'>;
-}
-declare module '@babel/plugin-proposal-decorators/lib/transformer.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-decorators/lib/transformer'>;
 }

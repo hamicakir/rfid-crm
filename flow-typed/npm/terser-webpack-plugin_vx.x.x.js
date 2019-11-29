@@ -1,4 +1,4 @@
-// flow-typed signature: f64e0a9e5a494885402356910ce84c1f
+// flow-typed signature: b2c36091bd35921e7eaf0d32731256e7
 // flow-typed version: <<STUB>>/terser-webpack-plugin_v^1.1.0/flow_v0.77.0
 
 /**
@@ -26,7 +26,7 @@ declare module 'terser-webpack-plugin/dist/cjs' {
   declare module.exports: any;
 }
 
-declare module 'terser-webpack-plugin/dist/index' {
+declare module 'terser-webpack-plugin/dist' {
   declare module.exports: any;
 }
 
@@ -46,8 +46,11 @@ declare module 'terser-webpack-plugin/dist/worker' {
 declare module 'terser-webpack-plugin/dist/cjs.js' {
   declare module.exports: $Exports<'terser-webpack-plugin/dist/cjs'>;
 }
+declare module 'terser-webpack-plugin/dist/index' {
+  declare module.exports: $Exports<'terser-webpack-plugin/dist'>;
+}
 declare module 'terser-webpack-plugin/dist/index.js' {
-  declare module.exports: $Exports<'terser-webpack-plugin/dist/index'>;
+  declare module.exports: $Exports<'terser-webpack-plugin/dist'>;
 }
 declare module 'terser-webpack-plugin/dist/minify.js' {
   declare module.exports: $Exports<'terser-webpack-plugin/dist/minify'>;

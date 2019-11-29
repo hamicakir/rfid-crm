@@ -1,4 +1,4 @@
-// flow-typed signature: 64dd081b2f80ce881b16afb6994b2f1e
+// flow-typed signature: 0b60fa40927125afea4c632cc3b9887d
 // flow-typed version: <<STUB>>/@babel/plugin-transform-react-constant-elements_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-transform-react-constant-elements' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-transform-react-constant-elements/lib/index' {
+declare module '@babel/plugin-transform-react-constant-elements/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-transform-react-constant-elements/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-transform-react-constant-elements/lib'>;
+}
 declare module '@babel/plugin-transform-react-constant-elements/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-transform-react-constant-elements/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-transform-react-constant-elements/lib'>;
 }

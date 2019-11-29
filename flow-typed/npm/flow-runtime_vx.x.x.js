@@ -1,4 +1,4 @@
-// flow-typed signature: 47114fced81c9537626e21fd9c3e02d8
+// flow-typed signature: a23b48beb3257a78b06aa6fce68e3716
 // flow-typed version: <<STUB>>/flow-runtime_v^0.17.0/flow_v0.77.0
 
 /**
@@ -110,7 +110,7 @@ declare module 'flow-runtime/lib/declarations/ExtendsDeclaration' {
   declare module.exports: any;
 }
 
-declare module 'flow-runtime/lib/declarations/index' {
+declare module 'flow-runtime/lib/declarations' {
   declare module.exports: any;
 }
 
@@ -198,7 +198,7 @@ declare module 'flow-runtime/lib/index.cjs' {
   declare module.exports: any;
 }
 
-declare module 'flow-runtime/lib/index' {
+declare module 'flow-runtime/lib' {
   declare module.exports: any;
 }
 
@@ -330,7 +330,7 @@ declare module 'flow-runtime/lib/types/GenericType' {
   declare module.exports: any;
 }
 
-declare module 'flow-runtime/lib/types/index' {
+declare module 'flow-runtime/lib/types' {
   declare module.exports: any;
 }
 
@@ -525,8 +525,11 @@ declare module 'flow-runtime/lib/declarations/Declaration.js' {
 declare module 'flow-runtime/lib/declarations/ExtendsDeclaration.js' {
   declare module.exports: $Exports<'flow-runtime/lib/declarations/ExtendsDeclaration'>;
 }
+declare module 'flow-runtime/lib/declarations/index' {
+  declare module.exports: $Exports<'flow-runtime/lib/declarations'>;
+}
 declare module 'flow-runtime/lib/declarations/index.js' {
-  declare module.exports: $Exports<'flow-runtime/lib/declarations/index'>;
+  declare module.exports: $Exports<'flow-runtime/lib/declarations'>;
 }
 declare module 'flow-runtime/lib/declarations/ModuleDeclaration.js' {
   declare module.exports: $Exports<'flow-runtime/lib/declarations/ModuleDeclaration'>;
@@ -591,8 +594,11 @@ declare module 'flow-runtime/lib/globalContext.js' {
 declare module 'flow-runtime/lib/index.cjs.js' {
   declare module.exports: $Exports<'flow-runtime/lib/index.cjs'>;
 }
+declare module 'flow-runtime/lib/index' {
+  declare module.exports: $Exports<'flow-runtime/lib'>;
+}
 declare module 'flow-runtime/lib/index.js' {
-  declare module.exports: $Exports<'flow-runtime/lib/index'>;
+  declare module.exports: $Exports<'flow-runtime/lib'>;
 }
 declare module 'flow-runtime/lib/invariant.js' {
   declare module.exports: $Exports<'flow-runtime/lib/invariant'>;
@@ -690,8 +696,11 @@ declare module 'flow-runtime/lib/types/GeneratorType.js' {
 declare module 'flow-runtime/lib/types/GenericType.js' {
   declare module.exports: $Exports<'flow-runtime/lib/types/GenericType'>;
 }
+declare module 'flow-runtime/lib/types/index' {
+  declare module.exports: $Exports<'flow-runtime/lib/types'>;
+}
 declare module 'flow-runtime/lib/types/index.js' {
-  declare module.exports: $Exports<'flow-runtime/lib/types/index'>;
+  declare module.exports: $Exports<'flow-runtime/lib/types'>;
 }
 declare module 'flow-runtime/lib/types/IntersectionType.js' {
   declare module.exports: $Exports<'flow-runtime/lib/types/IntersectionType'>;

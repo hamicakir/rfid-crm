@@ -1,4 +1,4 @@
-// flow-typed signature: 6b0bb28cdfdfd7c822d7dfd9b8f1ba11
+// flow-typed signature: ca68346889988b36921ee24940c35632
 // flow-typed version: <<STUB>>/devtron_v^1.4.0/flow_v0.77.0
 
 /**
@@ -30,7 +30,7 @@ declare module 'devtron/out/browser-globals' {
   declare module.exports: any;
 }
 
-declare module 'devtron/out/index' {
+declare module 'devtron/out' {
   declare module.exports: any;
 }
 
@@ -41,6 +41,9 @@ declare module 'devtron/api.js' {
 declare module 'devtron/out/browser-globals.js' {
   declare module.exports: $Exports<'devtron/out/browser-globals'>;
 }
+declare module 'devtron/out/index' {
+  declare module.exports: $Exports<'devtron/out'>;
+}
 declare module 'devtron/out/index.js' {
-  declare module.exports: $Exports<'devtron/out/index'>;
+  declare module.exports: $Exports<'devtron/out'>;
 }

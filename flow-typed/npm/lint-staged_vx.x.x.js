@@ -1,4 +1,4 @@
-// flow-typed signature: 5340f5fc33fb1dabeef9fef185706230
+// flow-typed signature: 0e48e0ad362f77bc73a0d4d4e5a38625
 // flow-typed version: <<STUB>>/lint-staged_v^8.1.0/flow_v0.77.0
 
 /**
@@ -30,6 +30,10 @@ declare module 'lint-staged/src/checkPkgScripts' {
   declare module.exports: any;
 }
 
+declare module 'lint-staged/src/execGit' {
+  declare module.exports: any;
+}
+
 declare module 'lint-staged/src/findBin' {
   declare module.exports: any;
 }
@@ -46,7 +50,7 @@ declare module 'lint-staged/src/gitWorkflow' {
   declare module.exports: any;
 }
 
-declare module 'lint-staged/src/index' {
+declare module 'lint-staged/src' {
   declare module.exports: any;
 }
 
@@ -83,6 +87,9 @@ declare module 'lint-staged/src/calcChunkSize.js' {
 declare module 'lint-staged/src/checkPkgScripts.js' {
   declare module.exports: $Exports<'lint-staged/src/checkPkgScripts'>;
 }
+declare module 'lint-staged/src/execGit.js' {
+  declare module.exports: $Exports<'lint-staged/src/execGit'>;
+}
 declare module 'lint-staged/src/findBin.js' {
   declare module.exports: $Exports<'lint-staged/src/findBin'>;
 }
@@ -95,8 +102,11 @@ declare module 'lint-staged/src/getConfig.js' {
 declare module 'lint-staged/src/gitWorkflow.js' {
   declare module.exports: $Exports<'lint-staged/src/gitWorkflow'>;
 }
+declare module 'lint-staged/src/index' {
+  declare module.exports: $Exports<'lint-staged/src'>;
+}
 declare module 'lint-staged/src/index.js' {
-  declare module.exports: $Exports<'lint-staged/src/index'>;
+  declare module.exports: $Exports<'lint-staged/src'>;
 }
 declare module 'lint-staged/src/makeCmdTasks.js' {
   declare module.exports: $Exports<'lint-staged/src/makeCmdTasks'>;

@@ -1,4 +1,4 @@
-// flow-typed signature: fe3bd08dbfaa337ee14a0107915e8603
+// flow-typed signature: 4dd07b0eebe44d156acf750a1118dff4
 // flow-typed version: <<STUB>>/sass-loader_v^7.1.0/flow_v0.77.0
 
 /**
@@ -22,46 +22,56 @@ declare module 'sass-loader' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module 'sass-loader/lib/formatSassError' {
+declare module 'sass-loader/dist/cjs' {
   declare module.exports: any;
 }
 
-declare module 'sass-loader/lib/importsToResolve' {
+declare module 'sass-loader/dist/formatSassError' {
   declare module.exports: any;
 }
 
-declare module 'sass-loader/lib/loader' {
+declare module 'sass-loader/dist/getSassOptions' {
   declare module.exports: any;
 }
 
-declare module 'sass-loader/lib/normalizeOptions' {
+declare module 'sass-loader/dist/importsToResolve' {
   declare module.exports: any;
 }
 
-declare module 'sass-loader/lib/proxyCustomImporters' {
+declare module 'sass-loader/dist' {
   declare module.exports: any;
 }
 
-declare module 'sass-loader/lib/webpackImporter' {
+declare module 'sass-loader/dist/proxyCustomImporters' {
+  declare module.exports: any;
+}
+
+declare module 'sass-loader/dist/webpackImporter' {
   declare module.exports: any;
 }
 
 // Filename aliases
-declare module 'sass-loader/lib/formatSassError.js' {
-  declare module.exports: $Exports<'sass-loader/lib/formatSassError'>;
+declare module 'sass-loader/dist/cjs.js' {
+  declare module.exports: $Exports<'sass-loader/dist/cjs'>;
 }
-declare module 'sass-loader/lib/importsToResolve.js' {
-  declare module.exports: $Exports<'sass-loader/lib/importsToResolve'>;
+declare module 'sass-loader/dist/formatSassError.js' {
+  declare module.exports: $Exports<'sass-loader/dist/formatSassError'>;
 }
-declare module 'sass-loader/lib/loader.js' {
-  declare module.exports: $Exports<'sass-loader/lib/loader'>;
+declare module 'sass-loader/dist/getSassOptions.js' {
+  declare module.exports: $Exports<'sass-loader/dist/getSassOptions'>;
 }
-declare module 'sass-loader/lib/normalizeOptions.js' {
-  declare module.exports: $Exports<'sass-loader/lib/normalizeOptions'>;
+declare module 'sass-loader/dist/importsToResolve.js' {
+  declare module.exports: $Exports<'sass-loader/dist/importsToResolve'>;
 }
-declare module 'sass-loader/lib/proxyCustomImporters.js' {
-  declare module.exports: $Exports<'sass-loader/lib/proxyCustomImporters'>;
+declare module 'sass-loader/dist/index' {
+  declare module.exports: $Exports<'sass-loader/dist'>;
 }
-declare module 'sass-loader/lib/webpackImporter.js' {
-  declare module.exports: $Exports<'sass-loader/lib/webpackImporter'>;
+declare module 'sass-loader/dist/index.js' {
+  declare module.exports: $Exports<'sass-loader/dist'>;
+}
+declare module 'sass-loader/dist/proxyCustomImporters.js' {
+  declare module.exports: $Exports<'sass-loader/dist/proxyCustomImporters'>;
+}
+declare module 'sass-loader/dist/webpackImporter.js' {
+  declare module.exports: $Exports<'sass-loader/dist/webpackImporter'>;
 }

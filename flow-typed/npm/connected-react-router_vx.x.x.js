@@ -1,4 +1,4 @@
-// flow-typed signature: 14c57d6105155f55c31bf05fa1c0c64a
+// flow-typed signature: ea3f72134ba9d57bd0dfb7762bb9c492
 // flow-typed version: <<STUB>>/connected-react-router_v^5.0.1/flow_v0.77.0
 
 /**
@@ -42,7 +42,7 @@ declare module 'connected-react-router/lib/immutable' {
   declare module.exports: any;
 }
 
-declare module 'connected-react-router/lib/index' {
+declare module 'connected-react-router/lib' {
   declare module.exports: any;
 }
 
@@ -66,7 +66,7 @@ declare module 'connected-react-router/lib/structure/immutable/getIn' {
   declare module.exports: any;
 }
 
-declare module 'connected-react-router/lib/structure/immutable/index' {
+declare module 'connected-react-router/lib/structure/immutable' {
   declare module.exports: any;
 }
 
@@ -74,11 +74,11 @@ declare module 'connected-react-router/lib/structure/plain/getIn' {
   declare module.exports: any;
 }
 
-declare module 'connected-react-router/lib/structure/plain/index' {
+declare module 'connected-react-router/lib/structure/plain' {
   declare module.exports: any;
 }
 
-declare module 'connected-react-router/lib/structure/seamless-immutable/index' {
+declare module 'connected-react-router/lib/structure/seamless-immutable' {
   declare module.exports: any;
 }
 
@@ -114,8 +114,11 @@ declare module 'connected-react-router/lib/createAll.js' {
 declare module 'connected-react-router/lib/immutable.js' {
   declare module.exports: $Exports<'connected-react-router/lib/immutable'>;
 }
+declare module 'connected-react-router/lib/index' {
+  declare module.exports: $Exports<'connected-react-router/lib'>;
+}
 declare module 'connected-react-router/lib/index.js' {
-  declare module.exports: $Exports<'connected-react-router/lib/index'>;
+  declare module.exports: $Exports<'connected-react-router/lib'>;
 }
 declare module 'connected-react-router/lib/middleware.js' {
   declare module.exports: $Exports<'connected-react-router/lib/middleware'>;
@@ -132,17 +135,26 @@ declare module 'connected-react-router/lib/selectors.js' {
 declare module 'connected-react-router/lib/structure/immutable/getIn.js' {
   declare module.exports: $Exports<'connected-react-router/lib/structure/immutable/getIn'>;
 }
+declare module 'connected-react-router/lib/structure/immutable/index' {
+  declare module.exports: $Exports<'connected-react-router/lib/structure/immutable'>;
+}
 declare module 'connected-react-router/lib/structure/immutable/index.js' {
-  declare module.exports: $Exports<'connected-react-router/lib/structure/immutable/index'>;
+  declare module.exports: $Exports<'connected-react-router/lib/structure/immutable'>;
 }
 declare module 'connected-react-router/lib/structure/plain/getIn.js' {
   declare module.exports: $Exports<'connected-react-router/lib/structure/plain/getIn'>;
 }
+declare module 'connected-react-router/lib/structure/plain/index' {
+  declare module.exports: $Exports<'connected-react-router/lib/structure/plain'>;
+}
 declare module 'connected-react-router/lib/structure/plain/index.js' {
-  declare module.exports: $Exports<'connected-react-router/lib/structure/plain/index'>;
+  declare module.exports: $Exports<'connected-react-router/lib/structure/plain'>;
+}
+declare module 'connected-react-router/lib/structure/seamless-immutable/index' {
+  declare module.exports: $Exports<'connected-react-router/lib/structure/seamless-immutable'>;
 }
 declare module 'connected-react-router/lib/structure/seamless-immutable/index.js' {
-  declare module.exports: $Exports<'connected-react-router/lib/structure/seamless-immutable/index'>;
+  declare module.exports: $Exports<'connected-react-router/lib/structure/seamless-immutable'>;
 }
 declare module 'connected-react-router/seamless-immutable.js' {
   declare module.exports: $Exports<'connected-react-router/seamless-immutable'>;

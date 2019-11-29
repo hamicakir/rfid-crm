@@ -1,4 +1,4 @@
-// flow-typed signature: fcbfec803a145e54503ba8fb458e5af1
+// flow-typed signature: f24531dd10a419384c685cb6c613f6ff
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-function-sent_v^7.1.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-function-sent' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-function-sent/lib/index' {
+declare module '@babel/plugin-proposal-function-sent/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-function-sent/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-function-sent/lib'>;
+}
 declare module '@babel/plugin-proposal-function-sent/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-function-sent/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-function-sent/lib'>;
 }

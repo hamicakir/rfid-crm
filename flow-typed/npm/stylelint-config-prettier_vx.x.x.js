@@ -1,4 +1,4 @@
-// flow-typed signature: 0c393a5da3a02dde6682397cefa24dbd
+// flow-typed signature: 74d9d3211b2c8a194566dd1847b1094b
 // flow-typed version: <<STUB>>/stylelint-config-prettier_v^4.0.0/flow_v0.77.0
 
 /**
@@ -30,7 +30,7 @@ declare module 'stylelint-config-prettier/src/checker' {
   declare module.exports: any;
 }
 
-declare module 'stylelint-config-prettier/src/index' {
+declare module 'stylelint-config-prettier/src' {
   declare module.exports: any;
 }
 
@@ -41,6 +41,9 @@ declare module 'stylelint-config-prettier/bin/check.js' {
 declare module 'stylelint-config-prettier/src/checker.js' {
   declare module.exports: $Exports<'stylelint-config-prettier/src/checker'>;
 }
+declare module 'stylelint-config-prettier/src/index' {
+  declare module.exports: $Exports<'stylelint-config-prettier/src'>;
+}
 declare module 'stylelint-config-prettier/src/index.js' {
-  declare module.exports: $Exports<'stylelint-config-prettier/src/index'>;
+  declare module.exports: $Exports<'stylelint-config-prettier/src'>;
 }

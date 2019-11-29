@@ -1,4 +1,4 @@
-// flow-typed signature: 25fae9e78f1eb17744af5a8d8d68ba2b
+// flow-typed signature: 31302d04b058c4ceb34668df9ea986e4
 // flow-typed version: <<STUB>>/@fortawesome/fontawesome-free_v^5.5.0/flow_v0.77.0
 
 /**
@@ -35,6 +35,14 @@ declare module '@fortawesome/fontawesome-free/js/brands' {
 }
 
 declare module '@fortawesome/fontawesome-free/js/brands.min' {
+  declare module.exports: any;
+}
+
+declare module '@fortawesome/fontawesome-free/js/conflict-detection' {
+  declare module.exports: any;
+}
+
+declare module '@fortawesome/fontawesome-free/js/conflict-detection.min' {
   declare module.exports: any;
 }
 
@@ -82,6 +90,12 @@ declare module '@fortawesome/fontawesome-free/js/brands.js' {
 }
 declare module '@fortawesome/fontawesome-free/js/brands.min.js' {
   declare module.exports: $Exports<'@fortawesome/fontawesome-free/js/brands.min'>;
+}
+declare module '@fortawesome/fontawesome-free/js/conflict-detection.js' {
+  declare module.exports: $Exports<'@fortawesome/fontawesome-free/js/conflict-detection'>;
+}
+declare module '@fortawesome/fontawesome-free/js/conflict-detection.min.js' {
+  declare module.exports: $Exports<'@fortawesome/fontawesome-free/js/conflict-detection.min'>;
 }
 declare module '@fortawesome/fontawesome-free/js/fontawesome.js' {
   declare module.exports: $Exports<'@fortawesome/fontawesome-free/js/fontawesome'>;

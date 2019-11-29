@@ -1,4 +1,4 @@
-// flow-typed signature: daf3cbbd23655a7bbfdb5cb22ce49087
+// flow-typed signature: a54c2332608a8f37ee483056aaf6f7d2
 // flow-typed version: <<STUB>>/sinon_v^7.1.1/flow_v0.77.0
 
 /**
@@ -62,10 +62,6 @@ declare module 'sinon/lib/sinon/fake' {
   declare module.exports: any;
 }
 
-declare module 'sinon/lib/sinon/match' {
-  declare module.exports: any;
-}
-
 declare module 'sinon/lib/sinon/mock-expectation' {
   declare module.exports: any;
 }
@@ -75,6 +71,10 @@ declare module 'sinon/lib/sinon/mock' {
 }
 
 declare module 'sinon/lib/sinon/sandbox' {
+  declare module.exports: any;
+}
+
+declare module 'sinon/lib/sinon/spy-entire-object' {
   declare module.exports: any;
 }
 
@@ -102,19 +102,7 @@ declare module 'sinon/lib/sinon/throw-on-falsy-object' {
   declare module.exports: any;
 }
 
-declare module 'sinon/lib/sinon/util/core/deep-equal' {
-  declare module.exports: any;
-}
-
 declare module 'sinon/lib/sinon/util/core/default-config' {
-  declare module.exports: any;
-}
-
-declare module 'sinon/lib/sinon/util/core/deprecated' {
-  declare module.exports: any;
-}
-
-declare module 'sinon/lib/sinon/util/core/every' {
   declare module.exports: any;
 }
 
@@ -162,10 +150,6 @@ declare module 'sinon/lib/sinon/util/core/is-restorable' {
   declare module.exports: any;
 }
 
-declare module 'sinon/lib/sinon/util/core/iterable-to-string' {
-  declare module.exports: any;
-}
-
 declare module 'sinon/lib/sinon/util/core/next-tick' {
   declare module.exports: any;
 }
@@ -175,10 +159,6 @@ declare module 'sinon/lib/sinon/util/core/restore' {
 }
 
 declare module 'sinon/lib/sinon/util/core/times-in-words' {
-  declare module.exports: any;
-}
-
-declare module 'sinon/lib/sinon/util/core/typeOf' {
   declare module.exports: any;
 }
 
@@ -241,9 +221,6 @@ declare module 'sinon/lib/sinon/default-behaviors.js' {
 declare module 'sinon/lib/sinon/fake.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/fake'>;
 }
-declare module 'sinon/lib/sinon/match.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/match'>;
-}
 declare module 'sinon/lib/sinon/mock-expectation.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/mock-expectation'>;
 }
@@ -252,6 +229,9 @@ declare module 'sinon/lib/sinon/mock.js' {
 }
 declare module 'sinon/lib/sinon/sandbox.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/sandbox'>;
+}
+declare module 'sinon/lib/sinon/spy-entire-object.js' {
+  declare module.exports: $Exports<'sinon/lib/sinon/spy-entire-object'>;
 }
 declare module 'sinon/lib/sinon/spy-formatters.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/spy-formatters'>;
@@ -271,17 +251,8 @@ declare module 'sinon/lib/sinon/stub.js' {
 declare module 'sinon/lib/sinon/throw-on-falsy-object.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/throw-on-falsy-object'>;
 }
-declare module 'sinon/lib/sinon/util/core/deep-equal.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/deep-equal'>;
-}
 declare module 'sinon/lib/sinon/util/core/default-config.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/default-config'>;
-}
-declare module 'sinon/lib/sinon/util/core/deprecated.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/deprecated'>;
-}
-declare module 'sinon/lib/sinon/util/core/every.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/every'>;
 }
 declare module 'sinon/lib/sinon/util/core/export-async-behaviors.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/export-async-behaviors'>;
@@ -316,9 +287,6 @@ declare module 'sinon/lib/sinon/util/core/is-property-configurable.js' {
 declare module 'sinon/lib/sinon/util/core/is-restorable.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/is-restorable'>;
 }
-declare module 'sinon/lib/sinon/util/core/iterable-to-string.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/iterable-to-string'>;
-}
 declare module 'sinon/lib/sinon/util/core/next-tick.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/next-tick'>;
 }
@@ -327,9 +295,6 @@ declare module 'sinon/lib/sinon/util/core/restore.js' {
 }
 declare module 'sinon/lib/sinon/util/core/times-in-words.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/times-in-words'>;
-}
-declare module 'sinon/lib/sinon/util/core/typeOf.js' {
-  declare module.exports: $Exports<'sinon/lib/sinon/util/core/typeOf'>;
 }
 declare module 'sinon/lib/sinon/util/core/use-promise-library.js' {
   declare module.exports: $Exports<'sinon/lib/sinon/util/core/use-promise-library'>;

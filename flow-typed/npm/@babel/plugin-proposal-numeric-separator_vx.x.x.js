@@ -1,4 +1,4 @@
-// flow-typed signature: 3dd00158910aa1a51e009e2fd3d31999
+// flow-typed signature: f9052c9c5970f398b0e1491cfea978bb
 // flow-typed version: <<STUB>>/@babel/plugin-proposal-numeric-separator_v^7.0.0/flow_v0.77.0
 
 /**
@@ -22,11 +22,14 @@ declare module '@babel/plugin-proposal-numeric-separator' {
  * require those files directly. Feel free to delete any files that aren't
  * needed.
  */
-declare module '@babel/plugin-proposal-numeric-separator/lib/index' {
+declare module '@babel/plugin-proposal-numeric-separator/lib' {
   declare module.exports: any;
 }
 
 // Filename aliases
+declare module '@babel/plugin-proposal-numeric-separator/lib/index' {
+  declare module.exports: $Exports<'@babel/plugin-proposal-numeric-separator/lib'>;
+}
 declare module '@babel/plugin-proposal-numeric-separator/lib/index.js' {
-  declare module.exports: $Exports<'@babel/plugin-proposal-numeric-separator/lib/index'>;
+  declare module.exports: $Exports<'@babel/plugin-proposal-numeric-separator/lib'>;
 }

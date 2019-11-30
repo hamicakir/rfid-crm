@@ -52,8 +52,18 @@ class Home extends Component<Props> {
               }}
               className={styles.form}
             >
-              <input name="email" type="text" placeholder="USERNAME" />
-              <input name="password" type="password" placeholder="PASSWORD" />
+              <input
+                className={styles.input}
+                name="email"
+                type="text"
+                placeholder="USERNAME"
+              />
+              <input
+                className={styles.input}
+                name="password"
+                type="password"
+                placeholder="PASSWORD"
+              />
               <button
                 className={styles.button}
                 type="button"

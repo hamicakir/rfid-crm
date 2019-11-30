@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPlus, faClipboard } from '@fortawesome/free-solid-svg-icons';
+import SocketIoClient from 'socket.io-client';
 
 import routes from '../constants/routes';
 import styles from './Dashboard.css';
 
+const WebSocketEndpoint = 'http://localhost:3030';
+
 class Dashboard extends Component {
+  componentDidMount() {
+    const socket = SocketIoClient(WebSocketEndpoint);
+
+    socket.on('connection', () => {
+      console.log('Connected to the server');
+    });
+  }
+
   render() {
     return (
       <>

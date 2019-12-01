@@ -1,24 +1,49 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPlus, faClipboard } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUser,
+  faPlus,
+  faClipboard,
+  faCheckCircle,
+  faTimesCircle
+} from '@fortawesome/free-solid-svg-icons';
 import SocketIoClient from 'socket.io-client';
 
 import routes from '../constants/routes';
 import styles from './Dashboard.css';
 
 const WebSocketEndpoint = 'http://localhost:3030';
+const socket = SocketIoClient(WebSocketEndpoint);
 
 class Dashboard extends Component {
-  componentDidMount() {
-    const socket = SocketIoClient(WebSocketEndpoint);
+  state = {
+    cardNumber: null,
+    user: null
+  };
 
-    socket.on('connection', () => {
+  componentDidMount() {
+    socket.on('connect', () => {
       console.log('Connected to the server');
+
+      socket.on('card readed', data => {
+        console.log('DATA=>', data);
+        this.setState({ ...data });
+      });
     });
   }
 
+  sendData = id => {
+    console.log('SEND DATA', socket);
+    socket.emit('card read', `CARD_NUMBER_${id}`, () => {
+      console.log('EMITTED');
+    });
+  };
+
   render() {
+    const { cardNumber, user } = this.state;
+    console.log('THIS_STATE', this.state);
+
     return (
       <>
         <div className={styles.backButton} data-tid="backButton">
@@ -36,20 +61,36 @@ class Dashboard extends Component {
             />
             <div className={styles.infoContainer}>
               <h3>Card Holder Name:</h3>
-              <p>Hami ÇAKIR</p>
+              {user && user.username ? <p>{user.username}</p> : <p>---</p>}
             </div>
             <div className={styles.infoContainer}>
               <h3>Card Number:</h3>
-              <p>ASDasdASDasdASD</p>
+              {cardNumber && <p>{cardNumber}</p>}
             </div>
-            <div className={styles.infoContainer}>
-              <h3>Card Number:</h3>
-              <p>ASDasdASDasdASD</p>
+            <div style={styles.infoContainer}>
+              <h3>Access Status</h3>
+              {user && user.status === 'ACTIVE' ? (
+                <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  color="#20C20E"
+                  size="5x"
+                />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faTimesCircle}
+                  color="#B33A3A"
+                  size="5x"
+                />
+              )}
             </div>
-            <h3>Card Holder Name: </h3>
-            <h3>Card Holder Name: </h3>
           </div>
           <div className={styles.card}>
+            <button type="button" onClick={() => this.sendData(2)}>
+              Click Me FAIL
+            </button>
+            <button type="button" onClick={() => this.sendData(3)}>
+              Click Me SUCCESS
+            </button>
             <div className={styles.iconWrapper}>
               <FontAwesomeIcon
                 className={styles.icon}

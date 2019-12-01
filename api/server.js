@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 const http = require('http').Server(app);
@@ -9,6 +10,7 @@ const writeLogToJSON = require('./writeLogToJSON');
 const addPersonToJSON = require('./addPersonToJSON');
 const getPersonFromJSON = require('./getPersonFromJson');
 
+app.use(cors());
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -42,9 +44,13 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+// eslint-disable-next-line no-unused-vars
+app.get('/logs', (req, res) => {});
+
 app.post('/save-user', (req, res) => {
   try {
     const { cardNumber, username } = req.body;
+    console.log('CARDNUMBER_USERNAME', cardNumber, username, req.body);
     addPersonToJSON({ cardNumber, username });
     res.send({ success: true });
   } catch (e) {

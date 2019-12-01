@@ -115,3 +115,22 @@
   right: 20px;
   z-index: 22;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td,
+th {
+  color: #403d46;
+  border: 1px solid #232c39;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}

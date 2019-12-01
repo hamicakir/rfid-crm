@@ -1,25 +1,20 @@
 const FS = require('fs');
 const path = require('path');
 
-const filePath = path.join(__dirname, 'person.json');
+const filePath = path.join(__dirname, 'log.json');
 
-function getLogsFromJSON({ cardNumber }, cb) {
+function getLogsFromJSON(res) {
   console.log(__dirname);
 
   FS.readFile(filePath, { encoding: 'utf-8' }, (err, content) => {
     if (!err) {
-      const parsedUserData = JSON.parse(content);
-      const index = parsedUserData.persons.findIndex(
-        person => person.cardNumber === cardNumber
-      );
-      console.log('PERSON =>', parsedUserData.persons[index]);
-      if (index !== -1) {
-        cb(parsedUserData.persons[index]);
-      } else {
-        cb(null);
-      }
+      const parsedLogs = JSON.parse(content);
+
+      console.log('LOGS_GET =>', parsedLogs.logs);
+      res.send(parsedLogs);
     } else {
-      cb(null);
+      console.log('ERR', err);
+      res.send({ logs: [] });
     }
   });
 }

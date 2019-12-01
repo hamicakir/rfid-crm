@@ -9,6 +9,7 @@ const io = require('socket.io')(http);
 const writeLogToJSON = require('./writeLogToJSON');
 const addPersonToJSON = require('./addPersonToJSON');
 const getPersonFromJSON = require('./getPersonFromJson');
+const getLogsFromJSON = require('./getLogsFromJSON');
 
 app.use(cors());
 app.use(express.static(__dirname));
@@ -45,7 +46,9 @@ app.get('/', (req, res) => {
 });
 
 // eslint-disable-next-line no-unused-vars
-app.get('/logs', (req, res) => {});
+app.get('/logs', (req, res) => {
+  getLogsFromJSON(res);
+});
 
 app.post('/save-user', (req, res) => {
   try {

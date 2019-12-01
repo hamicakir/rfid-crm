@@ -14,7 +14,9 @@ import SocketIoClient from 'socket.io-client';
 import routes from '../constants/routes';
 import styles from './Dashboard.css';
 
-const WebSocketEndpoint = 'http://localhost:3030';
+const SERVER_IP = 'http://178.128.250.197';
+
+const WebSocketEndpoint = SERVER_IP;
 const socket = SocketIoClient(WebSocketEndpoint);
 
 type Props = {
@@ -29,7 +31,9 @@ class Dashboard extends Component<Props> {
   state = {
     cardNumber: null,
     user: null,
-    isModalVisible: false
+    isModalVisible: false,
+    isLogsVisible: false,
+    logs: null
   };
 
   componentDidMount() {
@@ -41,6 +45,15 @@ class Dashboard extends Component<Props> {
         this.setState(prevState => ({ ...prevState, ...data }));
       });
     });
+
+    fetch(`${SERVER_IP}/logs`)
+      // eslint-disable-next-line promise/always-return
+      .then(async res => {
+        const parsedData = await res.json();
+        console.log('LOGS', parsedData);
+        this.setState({ logs: parsedData.logs });
+      })
+      .catch(e => console.log('ERROR =>', e));
   }
 
   sendData = id => {
@@ -57,6 +70,13 @@ class Dashboard extends Component<Props> {
     }));
   };
 
+  changeLogsVisibility = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      isLogsVisible: !prevState.isLogsVisible
+    }));
+  };
+
   handleSubmit = () => {
     try {
       const { cardNumber } = this.state;
@@ -66,7 +86,7 @@ class Dashboard extends Component<Props> {
       if (cardNumber) {
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        fetch('http://localhost:3030/save-user', {
+        fetch(`${SERVER_IP}/save-user`, {
           method: 'POST',
           headers,
           body: JSON.stringify({ cardNumber, username })
@@ -89,7 +109,13 @@ class Dashboard extends Component<Props> {
   };
 
   render() {
-    const { cardNumber, user, isModalVisible } = this.state;
+    const {
+      cardNumber,
+      user,
+      isModalVisible,
+      isLogsVisible,
+      logs
+    } = this.state;
     console.log('THIS_STATE', this.state);
 
     return (
@@ -134,6 +160,41 @@ class Dashboard extends Component<Props> {
                     Save User
                   </button>
                 </form>
+              </div>
+            </div>
+          </div>
+        )}
+        {isLogsVisible && (
+          <div className={styles.modalContainer}>
+            <div className={styles.cardContainer}>
+              {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+              <div
+                onClick={this.changeLogsVisibility}
+                className={styles.closeIcon}
+              >
+                <FontAwesomeIcon icon={faTimes} color="#42a7f2" />
+              </div>
+              <div className={styles.card} style={{ width: '600px' }}>
+                <table>
+                  <tr>
+                    <th>Card Number</th>
+                    <th>User Name</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                  </tr>
+                  {logs &&
+                    logs.length > 0 &&
+                    logs.map(log => (
+                      <tr>
+                        <td>{log.cardNumber}</td>
+                        <td>{log.username}</td>
+                        <td>
+                          {log.status !== 'ACTIVE' ? 'PASSIVE' : 'ACTIVE'}
+                        </td>
+                        <td>{Date(log.data)}</td>
+                      </tr>
+                    ))}
+                </table>
               </div>
             </div>
           </div>
@@ -194,12 +255,15 @@ class Dashboard extends Component<Props> {
                 />
               </div>
               <div className={styles.divider} />
-              <FontAwesomeIcon
-                className={styles.icon}
-                icon={faClipboard}
-                size="6x"
-                color="#42a7f2"
-              />
+              {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+              <div onClick={this.changeLogsVisibility}>
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  icon={faClipboard}
+                  size="6x"
+                  color="#42a7f2"
+                />
+              </div>
             </div>
           </div>
         </div>

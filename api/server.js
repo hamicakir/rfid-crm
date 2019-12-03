@@ -1,3 +1,4 @@
+require('longjohn');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -19,11 +20,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 io.on('connection', socket => {
   console.log('a user is connected');
 
-  socket.on('card read', data => {
-    console.log(`${Date.now()} => `, data);
-    writeLogToJSON({ cardNumber: data });
-    getPersonFromJSON({ cardNumber: data }, user =>
-      socket.emit('card readed', { cardNumber: data, user })
+  socket.on('card read', ({ cardNumber }) => {
+    console.log(`${Date.now()} => `, cardNumber);
+    writeLogToJSON({ cardNumber });
+    getPersonFromJSON({ cardNumber }, user =>
+      socket.emit('card readed', { cardNumber, user })
     ); // burası callback metodumuz olarak düşünülebilir);
   });
 

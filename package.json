@@ -267,6 +267,7 @@
     "electron-updater": "^3.2.3",
     "express": "^4.17.1",
     "history": "^4.7.2",
+    "longjohn": "^0.2.12",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",

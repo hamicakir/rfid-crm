@@ -83,7 +83,7 @@ void setup() {
         WiFi.softAPdisconnect(true);
     }
 
-    WiFiMulti.addAP("House", "house_2017?=");
+    WiFiMulti.addAP("Burak", "14325678");
 
     //WiFi.disconnect();
     while(WiFiMulti.run() != WL_CONNECTED) {
@@ -94,7 +94,7 @@ void setup() {
     USE_SERIAL.printf("[SETUP] WiFi Connected %s\n", ip.c_str());
 
     // server address, port and URL
-    socketIO.begin("192.168.1.44", 3030);
+    socketIO.begin("178.128.250.197", 80);
 
     // event handler
     socketIO.onEvent(socketIOEvent);
@@ -117,6 +117,7 @@ void loop() {
                   tag = tag + mfrc522.uid.uidByte[i];
                   Serial.print(mfrc522.uid.uidByte[i], HEX);
             }
+           
             emitCardData(tag);
          
             Serial.println();

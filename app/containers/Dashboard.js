@@ -17,7 +17,6 @@ import styles from './Dashboard.css';
 const SERVER_IP = 'http://178.128.250.197';
 
 const WebSocketEndpoint = SERVER_IP;
-const socket = SocketIoClient(WebSocketEndpoint);
 
 type Props = {
   history: {
@@ -33,15 +32,17 @@ class Dashboard extends Component<Props> {
     user: null,
     isModalVisible: false,
     isLogsVisible: false,
-    logs: null
+    logs: null,
+    isConnected: false
   };
 
   componentDidMount() {
-    socket.on('connect', () => {
-      console.log('Connected to the server');
+    const socket = SocketIoClient(WebSocketEndpoint);
 
+    socket.on('connect', () => {
+      console.log('CONNECTED');
+      this.setState({ isConnected: true });
       socket.on('card readed', data => {
-        console.log('DATA=>', data);
         this.setState(prevState => ({ ...prevState, ...data }));
       });
     });
@@ -64,6 +65,14 @@ class Dashboard extends Component<Props> {
   };
 
   changeLogsVisibility = () => {
+    fetch(`${SERVER_IP}/logs`)
+      // eslint-disable-next-line promise/always-return
+      .then(async res => {
+        const parsedData = await res.json();
+        this.setState({ logs: parsedData.logs });
+      })
+      .catch(e => console.log('ERROR =>', e));
+
     this.setState(prevState => ({
       ...prevState,
       isLogsVisible: !prevState.isLogsVisible
@@ -101,10 +110,23 @@ class Dashboard extends Component<Props> {
     }
   };
 
+  handleReconnect = () => {
+    const socket = SocketIoClient(WebSocketEndpoint);
+
+    socket.on('connect', () => {
+      console.log('CONNNECTED');
+      this.setState({ isConnected: true });
+      socket.on('card readed', data => {
+        this.setState(prevState => ({ ...prevState, ...data }));
+      });
+    });
+  };
+
   render() {
     const {
       cardNumber,
       user,
+      isConnected,
       isModalVisible,
       isLogsVisible,
       logs
@@ -200,6 +222,17 @@ class Dashboard extends Component<Props> {
             <i className="fa fa-arrow-left fa-3x" />
           </Link>
         </div>
+        {!isConnected && (
+          <div className={styles.reconnectButton}>
+            <button
+              type="button"
+              onClick={() => this.handleReconnect()}
+              className={styles.button}
+            >
+              RECONNECT
+            </button>
+          </div>
+        )}
         <div className={styles.container}>
           <div className={styles.card}>
             <FontAwesomeIcon

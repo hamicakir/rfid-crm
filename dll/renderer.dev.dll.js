@@ -147,6 +147,30 @@ eval("module.exports = @fortawesome/react-fontawesome;\n\n//# sourceURL=webpack:
 
 /***/ }),
 
+/***/ "body-parser":
+/*!******************************!*\
+  !*** external "body-parser" ***!
+  \******************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+eval("module.exports = body-parser;\n\n//# sourceURL=webpack://renderer/external_%22body-parser%22?");
+
+/***/ }),
+
+/***/ "cors":
+/*!***********************!*\
+  !*** external "cors" ***!
+  \***********************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+eval("module.exports = cors;\n\n//# sourceURL=webpack://renderer/external_%22cors%22?");
+
+/***/ }),
+
 /***/ "devtron":
 /*!**************************!*\
   !*** external "devtron" ***!
@@ -195,6 +219,18 @@ eval("module.exports = electron-updater;\n\n//# sourceURL=webpack://renderer/ext
 
 /***/ }),
 
+/***/ "express":
+/*!**************************!*\
+  !*** external "express" ***!
+  \**************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+eval("module.exports = express;\n\n//# sourceURL=webpack://renderer/external_%22express%22?");
+
+/***/ }),
+
 /***/ "history":
 /*!**************************!*\
   !*** external "history" ***!
@@ -204,6 +240,18 @@ eval("module.exports = electron-updater;\n\n//# sourceURL=webpack://renderer/ext
 /***/ (function(module, exports) {
 
 eval("module.exports = history;\n\n//# sourceURL=webpack://renderer/external_%22history%22?");
+
+/***/ }),
+
+/***/ "longjohn":
+/*!***************************!*\
+  !*** external "longjohn" ***!
+  \***************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+eval("module.exports = longjohn;\n\n//# sourceURL=webpack://renderer/external_%22longjohn%22?");
 
 /***/ }),
 
@@ -300,6 +348,30 @@ eval("module.exports = redux;\n\n//# sourceURL=webpack://renderer/external_%22re
 /***/ (function(module, exports) {
 
 eval("module.exports = redux-thunk;\n\n//# sourceURL=webpack://renderer/external_%22redux-thunk%22?");
+
+/***/ }),
+
+/***/ "socket.io":
+/*!****************************!*\
+  !*** external "socket.io" ***!
+  \****************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+eval("module.exports = socket.io;\n\n//# sourceURL=webpack://renderer/external_%22socket.io%22?");
+
+/***/ }),
+
+/***/ "socket.io-client":
+/*!***********************************!*\
+  !*** external "socket.io-client" ***!
+  \***********************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+eval("module.exports = socket.io-client;\n\n//# sourceURL=webpack://renderer/external_%22socket.io-client%22?");
 
 /***/ }),
 

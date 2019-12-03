@@ -56,13 +56,6 @@ class Dashboard extends Component<Props> {
       .catch(e => console.log('ERROR =>', e));
   }
 
-  sendData = id => {
-    console.log('SEND DATA', socket);
-    socket.emit('card read', `CARD_NUMBER_${id}`, () => {
-      console.log('EMITTED');
-    });
-  };
-
   changeModalVisibility = () => {
     this.setState(prevState => ({
       ...prevState,
@@ -174,7 +167,10 @@ class Dashboard extends Component<Props> {
               >
                 <FontAwesomeIcon icon={faTimes} color="#42a7f2" />
               </div>
-              <div className={styles.card} style={{ width: '600px' }}>
+              <div
+                className={styles.card}
+                style={{ width: '600px', height: '600px', overflow: 'scroll' }}
+              >
                 <table>
                   <tr>
                     <th>Card Number</th>
@@ -218,7 +214,7 @@ class Dashboard extends Component<Props> {
             </div>
             <div className={styles.infoContainer}>
               <h3>Card Number:</h3>
-              {cardNumber && <p>{cardNumber}</p>}
+              {cardNumber ? <p>{cardNumber}</p> : '---'}
             </div>
             <div style={styles.infoContainer}>
               <h3>Access Status</h3>
@@ -238,12 +234,6 @@ class Dashboard extends Component<Props> {
             </div>
           </div>
           <div className={styles.card}>
-            <button type="button" onClick={() => this.sendData(2)}>
-              Click Me FAIL
-            </button>
-            <button type="button" onClick={() => this.sendData(3)}>
-              Click Me SUCCESS
-            </button>
             <div className={styles.iconWrapper}>
               {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
               <div onClick={this.changeModalVisibility}>

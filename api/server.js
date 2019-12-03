@@ -22,10 +22,10 @@ io.on('connection', socket => {
 
   socket.on('card read', ({ cardNumber }) => {
     console.log(`${Date.now()} => `, cardNumber);
-    writeLogToJSON({ cardNumber });
-    getPersonFromJSON({ cardNumber }, user =>
-      socket.emit('card readed', { cardNumber, user })
-    ); // burası callback metodumuz olarak düşünülebilir);
+    getPersonFromJSON({ cardNumber }, user => {
+      writeLogToJSON({ cardNumber, username: user ? user.username : '' });
+      socket.broadcast.emit('card readed', { cardNumber, user });
+    }); // burası callback metodumuz olarak düşünülebilir);
   });
 
   socket.on('disconnect', () => {

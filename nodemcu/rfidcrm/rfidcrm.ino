@@ -83,7 +83,7 @@ void setup() {
         WiFi.softAPdisconnect(true);
     }
 
-    WiFiMulti.addAP("My ASUS_5499", "1716151413");
+    WiFiMulti.addAP("House", "house_2017?=");
 
     //WiFi.disconnect();
     while(WiFiMulti.run() != WL_CONNECTED) {
@@ -94,7 +94,7 @@ void setup() {
     USE_SERIAL.printf("[SETUP] WiFi Connected %s\n", ip.c_str());
 
     // server address, port and URL
-    socketIO.begin("192.168.43.253", 3030);
+    socketIO.begin("192.168.1.44", 3030);
 
     // event handler
     socketIO.onEvent(socketIOEvent);
@@ -113,9 +113,8 @@ void loop() {
            Serial.print("Tag UID:");
            String tag = "";
            for (byte i = 0; i < mfrc522.uid.size; i++) {
-                  tag = tag + mfrc522.uid.uidByte[i];
-          
                   Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
+                  tag = tag + mfrc522.uid.uidByte[i];
                   Serial.print(mfrc522.uid.uidByte[i], HEX);
             }
             emitCardData(tag);
